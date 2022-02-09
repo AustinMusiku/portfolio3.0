@@ -1,0 +1,81 @@
+@use 'variables.scss';
+// -- BUTTONS --
+.btn{
+    display: inline-block
+}
+.btn--primary {
+    @extend %button;
+}
+.btn--cta{
+    @extend %button;
+    padding: .5rem 1.5em;
+    border: 1px solid $clr-grey;
+    text-decoration: none;
+    
+    &:hover {
+        border: 1px solid $clr-dark;
+        background-color: $clr-dark;
+        color: $clr-light;
+    }
+}
+
+
+// -- CURSOR --
+.cursor{
+    @extend %cursor;
+}
+.cursor__mini{
+    @extend %cursor;
+    width: 10px;
+    height: 10px;
+    border: none;
+    background: linear-gradient(135deg, $clr-secondary -100%, $clr-primary 250%);
+}
+.cursor--active{
+    // animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: cursor-enlarge .25s ease-in-out 0s 1 normal both;
+    background-color: #ffffff00;
+}
+
+a:hover .cursor{
+    border: none;
+}
+
+@keyframes cursor-enlarge {
+    to{
+        width: 50px;
+        height: 50px; 
+    }
+}
+
+// deck
+.deck{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .deck__item{
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+        max-width: 600px;
+
+        &:nth-of-type(2){
+            align-self: flex-end;
+        }
+    }
+}
+
+
+@media (max-width: 68.9375rem){
+    // -- CURSOR --
+    // hide cursor on mobiles
+    .cursor{
+        display: none;
+    }
+
+    // deck
+    .deck{
+        gap: 1em;
+    }
+}

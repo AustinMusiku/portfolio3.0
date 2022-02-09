@@ -1,0 +1,49 @@
+// -- VARIABLES --
+$fs-xxl: 4.2rem;
+$fs-xl: 4rem;
+$fs-l: 2rem;
+$fs-x: 1.1rem;
+$fs-s: .9rem;
+
+$fw-bold: 600;
+$fw-normal: 400;
+
+$fx-normal: normal;
+$fx-italic: italic;
+
+$ff-heading: 'Clash Display', serif;
+$ff-body: 'Clash Display', sans-serif;
+
+$clr-primary: #5aabdd;
+$clr-secondary: #00bcd4;
+$clr-dark: #1d1d1d;
+$clr-grey: lighten($clr-dark, 75%);
+$clr-light: #fff;
+
+$space-amounts: (1,2,3,4,5);
+
+@each $space in $space-amounts{
+    .--margin-top-#{$space} {
+        margin-top: #{$space}rem;
+    }
+    .--margin-right-#{$space} {
+        margin-right: #{$space}rem;
+    }
+    .--margin-bottom-#{$space} {
+        margin-bottom: #{$space}rem;
+    }
+    .--margin-left-#{$space} {
+        margin-left: #{$space}rem;
+    }
+
+    .--margin-left-right-#{$space} {
+        margin: 0 #{$space}rem;
+    }
+    .--margin-top-bottom-#{$space} {
+        margin: #{$space}rem 0;
+    }
+
+    .--margin-#{$space} {
+        margin: #{$space}rem;
+    }
+}

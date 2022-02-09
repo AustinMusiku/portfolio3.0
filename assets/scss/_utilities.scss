@@ -1,0 +1,22 @@
+// -- CLASSES --
+// Class: .btn
+%button{
+    display: inline-flex;
+    flex-direction: row;
+    gap: 1em;
+    text-decoration: underline;
+
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+// Class: .cursor
+%cursor{
+    position: fixed;
+    pointer-events: none;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid $clr-dark;
+}
