@@ -23,6 +23,7 @@
 // -- CURSOR --
 .cursor{
     @extend %cursor;
+    transition: trans .25s ease-in;
 }
 .cursor__mini{
     @extend %cursor;
@@ -30,22 +31,16 @@
     height: 10px;
     border: none;
     background: linear-gradient(135deg, $clr-secondary -100%, $clr-primary 250%);
+    transition: display .25s ease-in;
+
+    &.cursor--active{
+        display: none;
+    }
 }
-.cursor--active{
-    // animation: name duration timing-function delay iteration-count direction fill-mode;
-    animation: cursor-enlarge .25s ease-in-out 0s 1 normal both;
-    background-color: #ffffff00;
-}
+
 
 a:hover .cursor{
     border: none;
-}
-
-@keyframes cursor-enlarge {
-    to{
-        width: 50px;
-        height: 50px; 
-    }
 }
 
 // deck

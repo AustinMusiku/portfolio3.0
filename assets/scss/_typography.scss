@@ -5,7 +5,7 @@
     position: relative;
     margin-bottom: 2rem;
     font-family: $ff-body;
-    font-size: $fs-xl;
+    font-size: var(--fs-xl);
     font-weight: $fw-normal;
     color: $clr-dark;
     line-height: 1;
@@ -24,19 +24,19 @@
 }
 
 .heading{
-    font-size: 8em;
+    font-size: var(--fs-xl);
     font-weight: $fw-bold;
     font-family: $ff-heading;
     line-height: 1;
 }
 .sub-heading{
-    font-size: $fs-l;
+    font-size: var(--fs-l);
     font-weight: $fw-normal;
     line-height: 1.2;
     letter-spacing: 1px;
 }
 .mini-heading{
-    font-size: $fs-x;
+    font-size: var(--fs-x);
     font-weight: $fw-bold;
     line-height: 1.6;
     letter-spacing: 1px;
@@ -57,14 +57,13 @@
     }
 }
 
-a,p,span{
-    font-size: $fs-x;
+a,p{
+    font-size: var(--fs-x);
     font-weight: 400;
     line-height: 1.6;
     color: $clr-dark;
 }
 p{
-    margin-bottom: 1rem;
     line-height: 1.8;
 }
 a{

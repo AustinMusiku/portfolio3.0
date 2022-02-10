@@ -1,9 +1,21 @@
 // -- VARIABLES --
-$fs-xxl: 4.2rem;
-$fs-xl: 4rem;
-$fs-l: 2rem;
-$fs-x: 1.1rem;
-$fs-s: .9rem;
+:root{
+    --fs-xxl: 4.2rem;
+    --fs-xl: 4.0rem;
+    --fs-l: 2rem;
+    --fs-x: 1.1rem;
+    --fs-s: .9rem;
+}
+
+@media(max-width: 48rem){
+    :root{
+        --fs-xxl: 4.2rem;
+        --fs-xl: 2.8rem;
+        --fs-l: 2rem;
+        --fs-x: 1.1rem;
+        --fs-s: .9rem;
+    }
+}
 
 $fw-bold: 600;
 $fw-normal: 400;
@@ -15,7 +27,7 @@ $ff-heading: 'Clash Display', serif;
 $ff-body: 'Clash Display', sans-serif;
 
 $clr-primary: #5aabdd;
-$clr-secondary: #00bcd4;
+$clr-secondary: rgba(48,100,238,1);
 $clr-dark: #1d1d1d;
 $clr-grey: lighten($clr-dark, 75%);
 $clr-light: #fff;
