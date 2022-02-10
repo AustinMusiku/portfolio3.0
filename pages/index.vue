@@ -5,11 +5,11 @@
                     <div class="hero-heading">
                         <span class="concealer">
                             <div class="spanCurtain"></div>
-                            <h1 class="heading">Software</h1>
+                            <h1 class="heading">Web</h1>
                         </span>
                         <span class="concealer">
                             <div class="spanCurtain"></div>
-                            <h1 class="heading">Engineer<span class="blip">_</span></h1>
+                            <h1 class="heading">Developer<span class="blip">_</span></h1>
                         </span>
                     </div>
                     <p class="heroPara">Hey stranger, I design and build <a class="inline-link" href=""><strong>awesome stuff on the internet</strong></a>. I am passionate about web applications and all things tech.</p>

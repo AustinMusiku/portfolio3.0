@@ -55,7 +55,7 @@
         left: 0;
         width: 100vw;
         height: 100vh;
-        z-index: 1000;
+        z-index: 10000;
         
         &.curtain__outer{
             background: $clr-light;

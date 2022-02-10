@@ -1,5 +1,5 @@
 <template>
-    <div class="hamburger-menu" @click="animateHamburger()">
+    <div class="hamburger-menu" @click="toggleMenu()">
         <div class="hamburger-layer hamburger-layer-one"></div>
         <div class="hamburger-layer hamburger-layer-two"></div>
     </div>
@@ -24,15 +24,17 @@
                 // move bottom layer up
                 .to('.hamburger-layer-two', { duration: 0.25, y: -7, ease: 'power3.inOut' }, )
                 // rotate bottom layer
-                .to('.hamburger-layer-two', { duration: 0.1, rotate: -45 })
+                .to('.hamburger-layer-two', { duration: 0.1, rotate: -225 })
                 // rotate invisible top layer
                 .to('.hamburger-layer-one', { duration: 0.1, rotate: 45 })
                 // move top layer up and left
                 .to('.hamburger-layer-one', { duration: 0.1, x: -25, y: -20 })
                 // move top layer bottom and right
-                .to('.hamburger-layer-one', { duration: 0.1, x: 1, y: 10 })
+                .to('.hamburger-layer-one', { duration: 0.1, x: 1, y: 9 })
                 // fade top layer in
-                .to('.hamburger-layer-one', { duration: .5, opacity: 1, ease: 'ease.out'}, '-=.15');
+                .to('.hamburger-layer-one', { duration: .5, opacity: 1, ease: 'ease.out'}, '-=.15')
+                // change hamburger layer colors
+                .to('.hamburger-layer', { backgroundColor: '#fff' });
         },
         methods: {
             toggleMenu(){
@@ -64,13 +66,18 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            width: 35px;
+            width: 38px;
             height: 18px;
+            z-index: 4000;
 
            .hamburger-layer{
                width: 100%;
-               height: 1px;
+               height: 2px;
                background-color: $clr-dark;
+
+               &.hamburger-layer--active{
+                   background-color: $clr-light;
+               }
             }
         }
     }
