@@ -45,16 +45,18 @@ export default {
             })
             .from('.navigation__links', {
                 duration: .25,
-                opacity: 0
+                visibility: 'hidden',
+                ease: 'Power4.out'
+                // opacity: 0
             })
-            .from('.work-link', {
-                duration: 0.25,
-                y: '-50%'
-            }, '-=0.25')
-            .from('.contact-link', {
-                duration: 0.25,
-                y: '50%'
-            }, '-=0.25')
+            // .from('.work-link', {
+            //     duration: 0.25,
+            //     y: '-50%'
+            // }, '-=0.25')
+            // .from('.contact-link', {
+            //     duration: 0.25,
+            //     y: '50%'
+            // }, '-=0.25')
             // .from('.work-link', {
             //     duration: 0.1,
             //     y: '100',
