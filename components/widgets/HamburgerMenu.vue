@@ -24,7 +24,7 @@
                 // move bottom layer up
                 .to('.hamburger-layer-two', { duration: 0.25, y: -7, ease: 'power3.inOut' }, )
                 // rotate bottom layer
-                .to('.hamburger-layer-two', { duration: 0.1, rotate: -225 })
+                .to('.hamburger-layer-two', { duration: 0.3, rotate: -225, ease: 'power3.inOut' }, '-=0.1')
                 // rotate invisible top layer
                 .to('.hamburger-layer-one', { duration: 0.1, rotate: 45 })
                 // move top layer up and left

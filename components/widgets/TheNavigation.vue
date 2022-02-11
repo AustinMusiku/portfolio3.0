@@ -33,7 +33,7 @@ export default {
         let links = document.querySelectorAll('.navigation__link');
         this.menuAnimation
             .to('.left-block', {
-                delay: 1.25,
+                delay: 1.05,
                 duration: 0.25,
                 scaleY: 1,
                 transformOrigin: 'top'
@@ -45,9 +45,9 @@ export default {
             })
             .from('.navigation__links', {
                 duration: .25,
-                visibility: 'hidden',
-                ease: 'Power4.out'
-                // opacity: 0
+                opacity: 0,
+                display: 'none',
+                ease: 'Power4.out',
             })
             // .from('.work-link', {
             //     duration: 0.25,
@@ -107,7 +107,12 @@ export default {
         }
     }
     // edge case
-    @media(min-width: 48rem){ nav{ .navigation{ .navigation__links{ opacity: 1 !important } } } }
+    @media(min-width: 48rem){ nav{ .navigation{ 
+        .navigation__links{ 
+            opacity: 1 !important;
+            display: flex !important;
+        } 
+    } } }
 
     @media(max-width: 48rem){
         nav{
