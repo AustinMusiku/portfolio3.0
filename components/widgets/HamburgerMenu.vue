@@ -12,8 +12,7 @@
         name: 'HamburgerMenu',
         data(){
             return{
-                hamburgerAnimation: gsap.timeline({ reversed: true, paused: true }),
-                jekyky: 10
+                hamburgerAnimation: gsap.timeline({ reversed: true, paused: true })
             }
         },
         mounted(){

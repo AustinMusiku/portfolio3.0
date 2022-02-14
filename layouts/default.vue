@@ -33,7 +33,7 @@ export default {
 
 <style lang="scss">
 // -- IMPORTS --
-@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Epilogue&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Epilogue&display=swap');
 @import url('http://fonts.cdnfonts.com/css/clash-display');
                 
 // Sora Chivo Archivo

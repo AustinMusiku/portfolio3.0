@@ -5,8 +5,18 @@
               <a href="/"><h1 class="sub-heading">AM</h1></a>
           </div>
           <ul class="navigation__links">
-              <li><a href="work" class="navigation__link work-link">Work</a></li>
-              <li><a href="contact" class="navigation__link contact-link">Contact</a></li>
+                <li>
+                    <a href="work" class="navigation__link work-link">
+                        Work
+                        <span class="superscript">01</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact" class="navigation__link contact-link">
+                        Contact 
+                        <span class="superscript">02</span>
+                    </a>
+                </li>
           </ul>
           <div class="menu-curtain-block left-block"></div>
           <div class="menu-curtain-block right-block"></div>
@@ -99,8 +109,13 @@ export default {
 
                 .navigation__link{
                     color: $clr-dark;
+
+                    span{
+                        display: none;
+                    }
                 }
             }
+
             .menu-curtain-block{
                 display: none;
             }
@@ -121,29 +136,33 @@ export default {
                 flex-direction: row;
                 align-items: center;
                 justify-content: space-between;
-                
-                .logo{
-                    
-                }
-                
+
                 .navigation__links{
                     position: absolute;
                     display: flex;
+                    gap: 3em;
                     flex-direction: column;
-                    justify-content: space-between;
-                    left: 0;
                     top: 50vh;
                     transform: translateY(-50%);
+                    height: 10vh;
+                    left: 0;
                     width: 100vw;
-                    height: 15vh;
                     z-index: 2000;
 
                     .navigation__link{
-                        position: absolute;
                         transform: translateX(-50%);
                         color: $clr-light;
+                        font-size: var(--fs-l);
+                        font-weight: $fw-bold;
+
+                        span{
+                            display: inline-block;
+                            color: $clr-light;
+                        }
                     }
                 }
+
+
                 .menu-curtain-block{
                     position: absolute;
                     display: inline-block;
@@ -156,7 +175,8 @@ export default {
                     transform: scaleY(0);
 
                     &.right-block{
-                        left: 50%;
+                        left: 49%;
+                        width: 51%;
                         // background-color: $clr-grey;
                     }
                 }

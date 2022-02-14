@@ -13,7 +13,16 @@
         --fs-xl: 2.8rem;
         --fs-l: 2rem;
         --fs-x: 1.1rem;
-        --fs-s: .9rem;
+        --fs-s: .85rem;
+    }
+}
+@media(max-width: 20rem){
+    :root{
+        --fs-xxl: 4.2rem;
+        --fs-xl: 2.2rem;
+        --fs-l: 1.6rem;
+        --fs-x: 1rem;
+        --fs-s: .8rem;
     }
 }
 
@@ -28,7 +37,7 @@ $ff-body: 'Clash Display', sans-serif;
 
 $clr-primary: #5aabdd;
 $clr-secondary: rgba(48,100,238,1);
-$clr-dark: #1d1d1d;
+$clr-dark: #0d0d0d;
 $clr-grey: lighten($clr-dark, 75%);
 $clr-light: #fff;
 

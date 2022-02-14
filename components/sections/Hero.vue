@@ -29,15 +29,21 @@ export default {
         }
 
         .hero__content{
-            padding: 0 0 4em;
+            padding: 0 0 1.5em;
         }
     }
     @media(max-width: 48rem){
         .hero{
             padding: 0 1.5em;
+        }
+    }
+
+    @media(max-width: 20rem){
+        .hero{
+            padding: 0 1em;
 
             .hero__content{
-                margin: -2em 0 0;
+                padding: 0 0 1em;
             }
         }
     }

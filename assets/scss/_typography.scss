@@ -31,7 +31,7 @@
 }
 .sub-heading{
     font-size: var(--fs-l);
-    font-weight: $fw-normal;
+    font-weight: $fw-bold;
     line-height: 1.2;
     letter-spacing: 1px;
 }
@@ -55,6 +55,12 @@
         bottom: 0%;
         background-color: $clr-dark;
     }
+}
+
+.superscript{
+    font-size: var(--fs-s);
+    font-weight: $fw-normal;
+    vertical-align: text-top;
 }
 
 a,p{

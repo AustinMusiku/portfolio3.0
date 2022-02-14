@@ -87,6 +87,26 @@ header{
         }
     }
 
+    // SECTION  
+    section{
+        padding: 1.5em;
+    }
+    // -- HEADER --
+
+    // -- FOOTER --
+}
+@media(max-width: 20rem){
+    // -- GRID SYSTEM --
+    .grid{
+        .grid__container{
+            padding: 0 1em;
+        }
+    }
+
+    // SECTION  
+    section{
+        padding: 0 1em;
+    }
     // -- HEADER --
 
     // -- FOOTER --
