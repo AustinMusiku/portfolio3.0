@@ -1,15 +1,20 @@
 <template>
     <section class="grid">
         <div class="grid__container">
-            <div class="section__heading">works</div>
+            <h1 class="section__heading">works</h1>
+            <cards /> 
         </div>
     </section>
 </template>
 
 <script>
+import Cards from '@/components/miscellaneous/Cards';
 
 export default {
-    name: 'Works'
+    name: 'Works',
+    components: {
+        Cards
+    },
 }
 </script>
 
