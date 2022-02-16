@@ -16,7 +16,7 @@
 import Curtain from '@/components/sections/Curtain'
 import CursorOuter from '@/components/widgets/CursorOuter'
 import CursorPointer from '@/components/widgets/CursorPointer'
-import Navigation from '@/components/widgets/TheNavigation'
+import Navigation from '@/components/sections/TheNavigation'
 import TheFooter from '@/components/sections/TheFooter'
 
 export default {
@@ -32,16 +32,5 @@ export default {
 </script>
 
 <style lang="scss">
-// -- IMPORTS --
-// @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Epilogue&display=swap');
-@import url('http://fonts.cdnfonts.com/css/clash-display');
-                
-// Sora Chivo Archivo
 
-// -- RESETS --
-*,
-*::before,
-*::after{
-    font-family: 'Clash Display', sans-serif;
-}
 </style>

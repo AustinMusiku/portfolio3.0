@@ -1,5 +1,6 @@
 <template>
-    <hero :fullScreen="fullScreen">
+    <div>
+        <hero :fullScreen="fullScreen">
         <div slot="hero-content" class="hero-container">
                 <div class="hero-text">
                     <div class="hero-heading">
@@ -17,14 +18,23 @@
                 </div>
             </div>
     </hero>
+    
+    <works />
+    <cta />
+    </div>
 </template>
 
 <script>
-import Hero from '~/components/sections/Hero'
+import Hero from '~/components/sections/Hero';
+import Works from '~/components/sections/HomeWorksSection';
+import Cta from '~/components/sections/HomeCtaSection';
+
 export default {
     name: 'HomePage',
     components: {
-        Hero
+        Hero,
+        Works,
+        Cta
     },
     data(){
         return{
