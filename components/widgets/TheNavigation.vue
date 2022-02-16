@@ -6,81 +6,16 @@
           </div>
           <ul class="navigation__links">
                 <li>
-                    <a href="work" class="navigation__link work-link">
-                        Work
-                        <span class="superscript">01</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="contact" class="navigation__link contact-link">
-                        Contact 
-                        <span class="superscript">02</span>
-                    </a>
+                    <a href="contact" class="navigation__link contact-link">Contact</a>
                 </li>
           </ul>
-          <div class="menu-curtain-block left-block"></div>
-          <div class="menu-curtain-block right-block"></div>
-          <hamburger-menu @toggleMenu="toggleMenu"/>
       </div>
   </nav>
 </template>
 
 <script>
-import HamburgerMenu from '~/components/widgets/HamburgerMenu'
-import gsap from 'gsap';
-
 export default {
-    name: 'TheNavigation',
-    components: {
-        HamburgerMenu
-    },
-    data(){
-        return{
-            menuAnimation: gsap.timeline({ reversed: true, play: true })
-        }
-    },
-    mounted(){
-        let links = document.querySelectorAll('.navigation__link');
-        this.menuAnimation
-            .to('.left-block', {
-                delay: 1.05,
-                duration: 0.25,
-                scaleY: 1,
-                transformOrigin: 'top'
-            })
-            .to('.right-block', {
-                duration: 0.25,
-                scaleY: 1,
-                transformOrigin: 'bottom'
-            })
-            .from('.navigation__links', {
-                duration: .25,
-                opacity: 0,
-                display: 'none',
-                ease: 'Power4.out',
-            })
-            // .from('.work-link', {
-            //     duration: 0.25,
-            //     y: '-50%'
-            // }, '-=0.25')
-            // .from('.contact-link', {
-            //     duration: 0.25,
-            //     y: '50%'
-            // }, '-=0.25')
-            // .from('.work-link', {
-            //     duration: 0.1,
-            //     y: '100',
-            // })
-    },
-    methods: {
-        toggleMenu(){
-            let menu = document.querySelector('.navigation__links');
-            this.animateMenu();
-        },
-        animateMenu(){
-            this.menuAnimation.reversed() ? this.menuAnimation.play() : this.menuAnimation.reverse();
-        }
-    }
+    name: 'TheNavigation'
 }
 </script>
 
@@ -88,17 +23,13 @@ export default {
     nav{
         position: absolute;
         width: 100%;
-        height: 12vh;
+        height: 10vh;
 
         .navigation{
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
-            
-            .logo{
-                
-            }
             
             .navigation__links{
                 display: flex;
@@ -109,76 +40,6 @@ export default {
 
                 .navigation__link{
                     color: $clr-dark;
-
-                    span{
-                        display: none;
-                    }
-                }
-            }
-
-            .menu-curtain-block{
-                display: none;
-            }
-        }
-    }
-    // edge case
-    @media(min-width: 48rem){ nav{ .navigation{ 
-        .navigation__links{ 
-            opacity: 1 !important;
-            display: flex !important;
-        } 
-    } } }
-
-    @media(max-width: 48rem){
-        nav{
-            .navigation{
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-between;
-
-                .navigation__links{
-                    position: absolute;
-                    display: flex;
-                    gap: 3em;
-                    flex-direction: column;
-                    top: 50vh;
-                    transform: translateY(-50%);
-                    height: 10vh;
-                    left: 0;
-                    width: 100vw;
-                    z-index: 2000;
-
-                    .navigation__link{
-                        transform: translateX(-50%);
-                        color: $clr-light;
-                        font-size: var(--fs-l);
-                        font-weight: $fw-bold;
-
-                        span{
-                            display: inline-block;
-                            color: $clr-light;
-                        }
-                    }
-                }
-
-
-                .menu-curtain-block{
-                    position: absolute;
-                    display: inline-block;
-                    top: 0;
-                    left: 0;
-                    background-color: $clr-dark;
-                    width: 50vw;
-                    height: 100vh;
-                    z-index: 100;
-                    transform: scaleY(0);
-
-                    &.right-block{
-                        left: 49%;
-                        width: 51%;
-                        // background-color: $clr-grey;
-                    }
                 }
             }
         }
