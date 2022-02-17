@@ -9,11 +9,13 @@
             <img
              :src="work.imgUrl" 
              alt="fplfriend">
+
+
         </figure>
-        <caption>
+        <div>
             <h2 class="sub-heading">{{ work.title }}</h2>
             <p>{{ work.description }}</p>
-        </caption>
+        </div>
 
     </a>
 </template>
@@ -30,6 +32,13 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+    .cards__item{
+        border: 1px solid;
+        figure{
+            img{
+                width: 100%;
+            }
+        }
+    }
 </style>

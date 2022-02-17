@@ -5,9 +5,10 @@
         <p class="sub-heading">Let's make great things happen. I'm not Kanye West, "You can tell me something"😉</p>
       </div> -->
       <ul class="social">
-        <li><a target="_blank" rel="noopener" href="https://twitter.com/MusikuAustin/" class="social__link">Twitter</a></li>
-        <li><a target="_blank" rel="noopener" href="https://github.com/MusikuAustin/" class="social__link">Github</a></li>
-        <li><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/austin-musiku-0b37b819b/" class="social__link">LinkedIn</a></li>
+        <li><a target="_blank" rel="noopener" href="https://twitter.com/MusikuAustin/" class="underline social__link">Twitter</a></li>
+        <li><a target="_blank" rel="noopener" href="https://github.com/MusikuAustin/" class="underline social__link">Github</a></li>
+        <li><a target="_blank" rel="noopener" href="https://codepen.io/austinmusiku" class="underline social__link">Codepen</a></li>
+        <li><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/austin-musiku-0b37b819b/" class="underline social__link">LinkedIn</a></li>
       </ul>
     </div>
   </footer>
@@ -39,7 +40,7 @@ export default {
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
-        max-width: 300px;
+        max-width: 25em;
       }
     }
   }

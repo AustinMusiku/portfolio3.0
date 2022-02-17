@@ -4,6 +4,7 @@
         v-for="(work, i) in works"
         :key= "i"
         :work="work"
+        :class = "[i%2 ? 'cards__item--even' : 'cards__item--odd']"
       ></card>
   </div>
 </template>
@@ -33,6 +34,30 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
 
+        .cards__item{
+            height: fit-content;
+            &.cards__item--even{
+                margin: -4em 0 0 ;
+            }
+        }
+    }
+
+    @media(max-width: 48em){
+        .cards{
+            grid-template-columns: repeat(1, 1fr);
+            gap: 2em;
+
+            .cards__item{
+            &.cards__item--even{
+                margin: 0 0 0 ;
+            }
+        }
+        }
+    }
 </style>
