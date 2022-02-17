@@ -8,7 +8,7 @@
 
     <navigation/>
     <Nuxt/>
-    <the-footer></the-footer>
+    <the-footer />
   </div>
 </template>
 
