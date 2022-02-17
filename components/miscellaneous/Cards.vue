@@ -37,27 +37,20 @@ export default {
 <style lang="scss" scoped>
     .cards{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1em;
-
-        .cards__item{
-            height: fit-content;
-            &.cards__item--even{
-                margin: -4em 0 0 ;
-            }
-        }
+        grid-template-columns: repeat(1, 1fr);
+        gap: 6em;
     }
 
     @media(max-width: 48em){
         .cards{
             grid-template-columns: repeat(1, 1fr);
-            gap: 2em;
+            gap: 3em;
 
             .cards__item{
-            &.cards__item--even{
-                margin: 0 0 0 ;
+                &.cards__item--even{
+                    margin: 0 0 0 ;
+                }
             }
-        }
         }
     }
 </style>

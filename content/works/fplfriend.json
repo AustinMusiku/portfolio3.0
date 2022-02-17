@@ -1,7 +1,7 @@
 {
-    "imgUrl": "/images/fplfriend.png",
+    "imgUrl": "/images/fplFriendMockUp2.png",
     "title": "fplFriend",
-    "description": "A handy guide to fpl team management",
+    "description": "A handy guide to fantasy premier league team management",
     "techStack": [ "Sass", "JavaScript", "Nodejs", "Express", "GraphQL", "D3js" ],
     "link": "https://fplFriend.herokuapp.com/",
     "github": "https://github.com/musikuAustin/fplFriend"

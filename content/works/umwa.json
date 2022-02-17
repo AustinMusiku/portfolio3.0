@@ -1,5 +1,5 @@
 {
-    "imgUrl": "/images/fplfriend.png",
+    "imgUrl": "/images/fplfriendMockup.png",
     "title": "fplFriend",
     "description": "A handy guide to fpl team management",
     "techStack": [ "Sass", "JavaScript", "Nodejs", "Express", "GraphQL", "D3js" ],

@@ -18,7 +18,7 @@ export default {
 
 <style lang="scss" scoped>
     .cta-text{
-        // max-width: 30em;
+        padding: 5em 0;
         .sub-heading{
             margin: .25em 0 0;
         }
