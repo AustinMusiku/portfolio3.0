@@ -16,7 +16,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'http://fonts.cdnfonts.com/css/clash-display' }
+      { rel: 'stylesheet', href: 'https://fonts.cdnfonts.com/css/clash-display' }
     ],
     script: [
       { src: './js/index.js', type: 'text/javascript', defer: true }
