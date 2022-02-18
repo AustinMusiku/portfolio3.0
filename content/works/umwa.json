@@ -1,6 +1,9 @@
 {
-    "imgUrl": "/images/fplfriendMockup.png",
-    "title": "fplFriend",
+    "imgUrl": {
+        "inner": "/images/Group6.png",
+        "outer": "/images/bg.png"
+    },
+    "title": "utawala mulembe self help group",
     "description": "A handy guide to fpl team management",
     "techStack": [ "Sass", "JavaScript", "Nodejs", "Express", "GraphQL", "D3js" ],
     "link": "https://fplFriend.herokuapp.com/",

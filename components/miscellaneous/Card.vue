@@ -7,8 +7,15 @@
 
         <figure>
             <img
-             :src="work.imgUrl" 
+             :src="work.imgUrl.outer" 
+             class="outer-img"
              alt="fplfriend">
+
+            <img
+             :src="work.imgUrl.inner" 
+             class="inner-img"
+             alt="fplfriend">
+             
         </figure>
         <div class="item__text">
             <h2 class="heading">{{ work.title }}</h2>
@@ -35,9 +42,23 @@ export default {
         position: relative;
 
         figure{
+            position: relative;
             width: 80%;
+
             img{
+                position: relative;
                 width: 100%;
+                height: 100%;
+                
+                &.inner-img{
+                    position: absolute;
+                    width: 70%;
+                    height: 75%;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 1;
+                }
             }
         }
         .item__text{
@@ -45,6 +66,8 @@ export default {
             top: 80%;
             transform: translateY(-50%);
             right: 0;
+            max-width: 50%;
+            z-index: 2;
         }
 
         &.cards__item--even{
@@ -67,6 +90,7 @@ export default {
                 padding: .5em 0 0;
                 top: 0;
                 transform: translateY(0%);
+                max-width: 100%;
             }
 
         }
