@@ -44,7 +44,7 @@ export default {
     @media(max-width: 48em){
         .cards{
             grid-template-columns: repeat(1, 1fr);
-            gap: 3em;
+            gap: 5em;
 
             .cards__item{
                 &.cards__item--even{

@@ -1,23 +1,28 @@
 <template>
     <a
+    data-scroll data-scroll-speed="2"
     target="_blank"
     rel="noopener"
     :href="work.link"
     class="cards__item">
 
-        <figure>
+        <figure data-scroll>
             <img
+            data-scroll
+            data-scroll-speed="2.5"
              :src="work.imgUrl.outer" 
              class="outer-img"
              alt="fplfriend">
 
             <img
+            data-scroll
+            data-scroll-speed=".5"
              :src="work.imgUrl.inner" 
              class="inner-img"
              alt="fplfriend">
              
         </figure>
-        <div class="item__text">
+        <div data-scroll data-scroll-speed="2" class="item__text">
             <h2 class="heading">{{ work.title }}</h2>
             <p>{{ work.description }}</p>
         </div>
@@ -54,16 +59,16 @@ export default {
                     position: absolute;
                     width: 70%;
                     height: 75%;
-                    left: 50%;
-                    top: 50%;
-                    transform: translate(-50%, -50%);
+                    left: 15%;
+                    top: 12.5%;
+                    // transform: translate(-50%, -50%);
                     z-index: 1;
                 }
             }
         }
         .item__text{
             position: absolute;
-            top: 80%;
+            top: 60%;
             transform: translateY(-50%);
             right: 0;
             max-width: 50%;
@@ -87,10 +92,14 @@ export default {
             }
             .item__text{
                 position: relative;
-                padding: .5em 0 0;
+                padding: .25em 0 0;
                 top: 0;
                 transform: translateY(0%);
                 max-width: 100%;
+
+                .heading{
+                    font-size: var(--fs-l);
+                }
             }
 
         }

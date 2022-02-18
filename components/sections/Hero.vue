@@ -1,6 +1,6 @@
 <template>
     <div class="hero grid" :class="{ 'hero--fullscreen' : fullScreen }">
-        <div class="grid__container hero__content">
+        <div data-scroll data-scroll-speed="2" class="grid__container hero__content">
             <slot name="hero-content"></slot>
         </div>
     </div>
@@ -29,12 +29,17 @@ export default {
         }
 
         .hero__content{
-            padding: 0 0 1.5em;
+            margin: 0 0 4.5em;
+            padding: 0;
         }
     }
     @media(max-width: 48rem){
         .hero{
             padding: 0 1.5em;
+
+            .hero__content{
+                margin: 0 0 2em;
+            }
         }
     }
 

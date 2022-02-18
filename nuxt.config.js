@@ -16,7 +16,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.cdnfonts.com/css/clash-display' }
+      { rel: 'stylesheet', href: 'https://fonts.cdnfonts.com/css/clash-display' },
     ],
     script: [
       { src: './js/index.js', type: 'text/javascript', defer: true }
@@ -30,6 +30,10 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    {
+      src: "~plugins/locomotiveScroll.js",
+      mode: "client"
+    }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
