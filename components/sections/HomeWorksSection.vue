@@ -2,7 +2,7 @@
     <section class="grid">
         <div class="grid__container">
             <h1 class="section__heading">works</h1>
-            <cards /> 
+            <cards></cards> 
         </div>
     </section>
 </template>
@@ -14,7 +14,7 @@ export default {
     name: 'Works',
     components: {
         Cards
-    },
+    }
 }
 </script>
 

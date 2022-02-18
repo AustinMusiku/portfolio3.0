@@ -92,6 +92,7 @@ export default {
             }
             .item__text{
                 position: relative;
+                margin: -2.5em 0 0;
                 padding: .25em 0 0;
                 top: 0;
                 transform: translateY(0%);

@@ -22,13 +22,11 @@ export default {
         }
     },
     mounted(){
-        console.log('hey');
         this.getWorks();
     },
     methods: {
         async getWorks(){
             this.works = await this.$content('works').fetch();
-            console.log(this.works);
         }
     }
 }

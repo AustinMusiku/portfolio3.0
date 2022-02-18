@@ -7,7 +7,9 @@
     <cursor-pointer/>
 
     <navigation/>
-    <Nuxt/>
+    <Nuxt
+    @resizeLs="resizeLs"
+    ></Nuxt>
     <the-footer/>
   </div>
 </template>
@@ -36,14 +38,27 @@ export default {
     }
   },
   mounted(){
-    this.scroll = new this.locomotiveScroll({
-      el: document.querySelector('[data-scroll-container]'),
-      smooth: true,
-      tablet: {
-        breakpoint: 768,
-        smooth: true
-      }
-    })
+    setTimeout(() => {
+        this.scroll = new this.locomotiveScroll({
+          el: document.querySelector('[data-scroll-container]'),
+          smooth: true,
+          multiplier: 0.25,
+
+          smartphone: {
+            smooth: true,
+            multiplier: 0.5
+          },
+          // tablet: {
+          //   breakpoint: 768,
+          //   smooth: true
+          // }
+      })
+    }, 2000)
+  },
+  methods: {
+    resizeLs(){
+      this.scroll.update();
+    }
   }
 }
 </script>
