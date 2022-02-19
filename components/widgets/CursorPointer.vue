@@ -28,7 +28,6 @@ export default {
         let cursorIcon = this.$refs.cursorIcon
         // only show cursor when mouse is over the page
         document.addEventListener('mouseenter', () => {
-          console.log('mouse entered page')
           gsap.to([cursorSmall, cursorBig], {
             duration: 0.1,
             opacity: 1,
@@ -36,7 +35,6 @@ export default {
           })
         })
         document.addEventListener('mouseleave', () => {
-          console.log('mouse left page')
           gsap.to([cursorSmall, cursorBig], {
             duration: 0.1,
             opacity: 0,
@@ -52,12 +50,14 @@ export default {
         });
       },
       growCursor(){
-        let links = Array.from(document.querySelectorAll('a'));
+        let links = Array.from(document.getElementsByTagName('a'));
         links.forEach(link => {
           link.addEventListener('mouseenter', e => {
+            console.log('mouse entered link')
             this.growCursorTl.reversed() ? this.growCursorTl.play() : this.growCursorTl.reverse();
           })
           link.addEventListener('mouseleave', e => {
+            console.log('mouse left link')
             this.growCursorTl.reversed() ? this.growCursorTl.play() : this.growCursorTl.reverse();
           })
         })

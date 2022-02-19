@@ -21,13 +21,8 @@ export default {
             works: []
         }
     },
-    mounted(){
-        this.getWorks();
-    },
-    methods: {
-        async getWorks(){
-            this.works = await this.$content('works').fetch();
-        }
+    async fetch(){
+        this.works = await this.$content('works').fetch();
     }
 }
 </script>
