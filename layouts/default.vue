@@ -6,9 +6,7 @@
     <cursor-pointer/>
 
     <navigation/>
-    <Nuxt
-    @resizeLs="resizeLs"
-    ></Nuxt>
+    <Nuxt />
     <the-footer/>
   </div>
 </template>
@@ -50,11 +48,6 @@ export default {
           }
       })
     }, 2000)
-  },
-  methods: {
-    resizeLs(){
-      this.scroll.update();
-    }
   }
 }
 </script>
