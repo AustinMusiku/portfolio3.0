@@ -19,7 +19,6 @@ export default {
       { rel: 'stylesheet', href: 'https://fonts.cdnfonts.com/css/clash-display' },
     ],
     script: [
-      { src: './js/index.js', type: 'text/javascript', defer: true }
     ]
   },
 
