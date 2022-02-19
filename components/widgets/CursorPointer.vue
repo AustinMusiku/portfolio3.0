@@ -2,7 +2,7 @@
   <div class="cursors">
     <div class="cursor cursor--small" ref="cursorSmall"></div>
     <div class="cursor cursor--big"   ref="cursorBig"></div>
-    <div class="cursor cursor--icon" ref="cursorSmall">
+    <div class="cursor cursor--icon" ref="cursorIcon">
       <img src="/images/upright_arrow.svg" alt="">
     </div>
   </div>
@@ -25,10 +25,12 @@ export default {
       initCursor() {
         let cursorSmall = this.$refs.cursorSmall
         let cursorBig = this.$refs.cursorBig
+        let cursorIcon = this.$refs.cursorIcon
         // add listener to track the current mouse position
         document.addEventListener("mousemove", e => {
-          gsap.to(cursorBig, 0.01, { x: e.clientX-30, y: e.clientY-30, delay: 0.05});
-          gsap.to(cursorSmall, 0.01, { x: e.clientX-5, y: e.clientY-5 });
+          gsap.to(cursorBig, 0.01, { x: e.clientX-35, y: e.clientY-35, delay: 0.05});
+          gsap.to(cursorSmall, 0.01, { x: e.clientX-2.5, y: e.clientY-2.5 });
+          gsap.to(cursorIcon, 0.01, { x: e.clientX-15, y: e.clientY-15 });
         });
       },
       growCursor(){
@@ -44,24 +46,22 @@ export default {
       }
     },
     mounted(){
-      let icon = this.$refs.cursorSmall.querySelector('img');
       this.growCursorTl = gsap.timeline({ paused: true, reversed: true })
         .to(this.$refs.cursorBig, {
           opacity: 0,
           duration: .1
         })
         .to(this.$refs.cursorSmall, {
-          scale: 10,
+          scale: 12,
           backgroundColor: '#0d0d0d',
           duration: .2,
           ease: 'power2.inout'
         })
-        .to(icon, {
+        .to(this.$refs.cursorIcon, {
           opacity: 1,
           duration: .1,
-          scale: 1,
           ease: 'power2.inout'
-        }, )
+        }, '-=.1')
 
       this.initCursor()
       this.growCursor()
@@ -73,8 +73,8 @@ export default {
   .cursor{
       position: fixed;
       pointer-events: none;
-      width: 60px;
-      height: 60px;
+      width: 70px;
+      height: 70px;
       border-radius: 50%;
       border: 1px solid $clr-dark;
       z-index: 5000;
@@ -82,21 +82,22 @@ export default {
   }
   // transition: trans .25s ease-in;
   .cursor--small{
-      width: 10px;
-      height: 10px;
+      width: 5px;
+      height: 5px;
+      background-color: $clr-dark;
+  }
 
-      &.cursor--active{
-          display: none;
-      }
+  .cursor--icon{
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    border: none;
+    z-index: 5001;
 
-      img{
+    img{
         position: relative;
-        border: 1px solid black;
-        width: 60px;
-        height: 60px;
-        top: -26px;
-        left: -26px;
-        // transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
       }
   }
 </style>
