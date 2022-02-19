@@ -26,6 +26,24 @@ export default {
         let cursorSmall = this.$refs.cursorSmall
         let cursorBig = this.$refs.cursorBig
         let cursorIcon = this.$refs.cursorIcon
+        // only show cursor when mouse is over the page
+        document.addEventListener('mouseenter', () => {
+          console.log('mouse entered page')
+          gsap.to([cursorSmall, cursorBig], {
+            duration: 0.1,
+            opacity: 1,
+            ease: 'power2.inOut'
+          })
+        })
+        document.addEventListener('mouseleave', () => {
+          console.log('mouse left page')
+          gsap.to([cursorSmall, cursorBig], {
+            duration: 0.1,
+            opacity: 0,
+            ease: 'power2.inOut'
+          })
+        })
+
         // add listener to track the current mouse position
         document.addEventListener("mousemove", e => {
           gsap.to(cursorBig, 0.01, { x: e.clientX-35, y: e.clientY-35, delay: 0.05});

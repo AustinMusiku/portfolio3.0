@@ -12,6 +12,11 @@
     width: fit-content;
 }
 
+.super-heading{
+    font-size: var(--fs-xxxl);
+    font-weight: $fw-bold;
+    line-height: 1;
+}
 .heading{
     font-size: var(--fs-xl);
     font-weight: $fw-bold;

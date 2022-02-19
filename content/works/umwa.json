@@ -3,8 +3,8 @@
         "inner": "/images/Group6.png",
         "outer": "/images/bg3.png"
     },
-    "title": "utawala mulembe self help group",
-    "description": "A handy guide to fpl team management",
+    "title": "utawala mulembe group",
+    "description": "Informational website and portal for a local welfare group",
     "techStack": [ "Sass", "JavaScript", "Nodejs", "Express", "GraphQL", "D3js" ],
     "link": "https://fplFriend.herokuapp.com/",
     "github": "https://github.com/musikuAustin/fplFriend"
