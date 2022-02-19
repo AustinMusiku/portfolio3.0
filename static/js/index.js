@@ -21,15 +21,15 @@ const positionCursor = e => {
         }, cursorRadius*2)
     });
 }
-window.addEventListener('mousemove', positionCursor);
+// window.addEventListener('mousemove', positionCursor);
 
-linksArray.forEach(link => {
-    link.addEventListener('mouseenter', () => {
-        console.log('hover over');
-        cursorsArray[1].classList.add('cursor--active');
-    })
-    link.addEventListener('mouseleave', () => {
-        console.log('hover over');
-        cursorsArray[1].classList.remove('cursor--active');
-    })
-})
+// linksArray.forEach(link => {
+//     link.addEventListener('mouseenter', () => {
+//         console.log('hover over');
+//         cursorsArray[1].classList.add('cursor--active');
+//     })
+//     link.addEventListener('mouseleave', () => {
+//         console.log('hover over');
+//         cursorsArray[1].classList.remove('cursor--active');
+//     })
+// })

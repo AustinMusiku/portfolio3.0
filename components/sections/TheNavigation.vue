@@ -6,7 +6,7 @@
           </div>
           <ul class="navigation__links">
                 <li>
-                    <a href="contact" class="navigation__link contact-link underline">Contact</a>
+                    <a href="/contact" class="navigation__link contact-link underline">Contact</a>
                 </li>
           </ul>
       </div>
@@ -24,6 +24,7 @@ export default {
         position: absolute;
         width: 100%;
         height: 10vh;
+        z-index: 10000;
 
         .navigation{
             display: flex;

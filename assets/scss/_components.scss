@@ -19,26 +19,6 @@
     }
 }
 
-
-// -- CURSOR --
-.cursor{
-    @extend %cursor;
-    transition: trans .25s ease-in;
-}
-.cursor__mini{
-    @extend %cursor;
-    width: 10px;
-    height: 10px;
-    border: none;
-    background: linear-gradient(135deg, $clr-secondary -100%, $clr-primary 250%);
-    transition: display .25s ease-in;
-
-    &.cursor--active{
-        display: none;
-    }
-}
-
-
 a:hover .cursor{
     border: none;
 }

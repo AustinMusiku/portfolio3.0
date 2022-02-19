@@ -10,14 +10,3 @@
         text-decoration: none;
     }
 }
-
-// Class: .cursor
-%cursor{
-    position: fixed;
-    pointer-events: none;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    border: 1px solid $clr-dark;
-    z-index: 5000;
-}

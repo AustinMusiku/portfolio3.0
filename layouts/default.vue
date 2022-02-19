@@ -3,7 +3,6 @@
     <curtain>
       <h1 slot="curtain-content" class="heading">AM</h1>
     </curtain>
-    <cursor-outer/>
     <cursor-pointer/>
 
     <navigation/>
@@ -16,7 +15,6 @@
 
 <script>
 import Curtain from '@/components/sections/Curtain'
-import CursorOuter from '@/components/widgets/CursorOuter'
 import CursorPointer from '@/components/widgets/CursorPointer'
 import Navigation from '@/components/sections/TheNavigation'
 import TheFooter from '@/components/sections/TheFooter'
@@ -27,7 +25,6 @@ export default {
   name: 'Layout',
   components: {
     Curtain,
-    CursorOuter,
     CursorPointer,
     Navigation,
     TheFooter
@@ -42,16 +39,15 @@ export default {
         this.scroll = new this.locomotiveScroll({
           el: document.querySelector('[data-scroll-container]'),
           smooth: true,
-          multiplier: 0.25,
+          multiplier: 1,
 
           smartphone: {
-            smooth: true,
-            multiplier: 0.5
+            smooth: false,
           },
-          // tablet: {
-          //   breakpoint: 768,
-          //   smooth: true
-          // }
+          tablet: {
+            breakpoint: 768,
+            smooth: false
+          }
       })
     }, 2000)
   },
