@@ -1,7 +1,7 @@
 {
     "imgUrl": {
-        "inner": "/images/tablet.png",
-        "outer": "/images/bg2.png"
+        "inner": "/images/tab-iphone.png",
+        "outer": "/images/bg3.png"
     },
     "title": "fplFriend",
     "description": "A handy guide to fantasy premier league team management",

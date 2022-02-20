@@ -21,7 +21,7 @@ export default {
 <style lang="scss" scoped>
     .hero{
         align-items: end;
-        height: 60vh;
+        height: 80vh;
         // background: $clr-grey;
 
         &.hero--fullscreen{

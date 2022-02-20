@@ -3,8 +3,8 @@
     <div class="grid__container">
       <ul class="social">
         <li><a target="_blank" rel="noopener" href="https://twitter.com/MusikuAustin/" class="underline social__link">Twitter</a></li>
-        <li><a target="_blank" rel="noopener" href="https://github.com/MusikuAustin/" class="underline social__link">Github</a></li>
-        <li><a target="_blank" rel="noopener" href="https://codepen.io/austinmusiku" class="underline social__link">Codepen</a></li>
+        <li><a target="_blank" rel="noopener" href="https://github.com/AustinMusiku/" class="underline social__link">Github</a></li>
+        <!-- <li><a target="_blank" rel="noopener" href="https://codepen.io/austinmusiku" class="underline social__link">Codepen</a></li> -->
         <li><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/austin-musiku-0b37b819b/" class="underline social__link">LinkedIn</a></li>
       </ul>
       <p>Austin Musiku 2022</p>
@@ -36,7 +36,7 @@ export default {
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
-        max-width: 25em;
+        max-width: 15em;
       }
     }
   }
@@ -50,9 +50,9 @@ export default {
         align-items: flex-start;
         
         .social{
-          margin: auto;
-          padding: 0 0 2em;
-          flex-direction: column;
+          // margin: auto;
+          padding: 0 0 .5em;
+          // flex-direction: column;
           gap: .75em;
           // flex-direction: column;
         }
