@@ -9,14 +9,14 @@
         <figure data-scroll>
             <img
             data-scroll
-            data-scroll-speed="2.5"
+            data-scroll-speed="1.5"
              :src="work.imgUrl.outer" 
              class="outer-img"
              alt="fplfriend">
 
             <img
             data-scroll
-            data-scroll-speed=".5"
+            data-scroll-speed="1"
              :src="work.imgUrl.inner" 
              class="inner-img"
              alt="fplfriend">
