@@ -26,7 +26,7 @@ export default {
 
         &.hero--fullscreen{
             height: 100vh;
-            background: url('/images/noise.png') no-repeat center center;
+            // background: url('/images/noise.png') no-repeat center center;
         }
 
         .hero__content{

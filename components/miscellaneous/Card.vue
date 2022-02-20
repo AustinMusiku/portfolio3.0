@@ -4,7 +4,7 @@
     target="_blank"
     rel="noopener"
     :href="work.link"
-    class="cards__item">
+    class="cards__item hover-link">
 
         <figure data-scroll>
             <img

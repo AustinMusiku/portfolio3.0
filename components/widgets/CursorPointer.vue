@@ -46,19 +46,28 @@ export default {
         document.addEventListener("mousemove", e => {
           gsap.to(cursorBig, { x: e.clientX-35, y: e.clientY-35, delay: 0.05});
           gsap.to(cursorSmall, { x: e.clientX-2.5, y: e.clientY-2.5, delay: 0.025});
-          gsap.to(cursorIcon, { x: e.clientX-15, y: e.clientY-15 });
+          gsap.to(cursorIcon, { x: e.clientX-20, y: e.clientY-20 });
         });
       },
       growCursor(){
-        let links = Array.from(document.getElementsByTagName('a'));
-        links.forEach(link => {
+        let hoverLinks = Array.from(document.querySelectorAll('.hover-link'));
+        let plainLinks = Array.from(document.querySelectorAll('a'));
+
+        hoverLinks.forEach(link => {
           link.addEventListener('mouseenter', e => {
-            console.log('mouse entered link')
             this.growCursorTl.reversed() ? this.growCursorTl.play() : this.growCursorTl.reverse();
           })
           link.addEventListener('mouseleave', e => {
-            console.log('mouse left link')
             this.growCursorTl.reversed() ? this.growCursorTl.play() : this.growCursorTl.reverse();
+          })
+        })
+
+        plainLinks.forEach(link => {
+          link.addEventListener('mouseenter', e => {
+            gsap.to('.cursor--big', { opacity: 0, duration: .1, ease: 'power2.in' })
+          })
+          link.addEventListener('mouseleave', e => {
+            gsap.to('.cursor--big', { opacity: 1, duration: .1, ease: 'power2.in' })
           })
         })
       }
@@ -70,7 +79,7 @@ export default {
           duration: .1
         })
         .to(this.$refs.cursorSmall, {
-          scale: 12,
+          scale: 20,
           backgroundColor: '#0d0d0d',
           duration: .2,
           ease: 'power2.inout'
@@ -106,8 +115,8 @@ export default {
   }
 
   .cursor--icon{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     opacity: 0;
     border: none;
     z-index: 5001;
