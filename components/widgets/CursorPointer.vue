@@ -44,9 +44,9 @@ export default {
 
         // add listener to track the current mouse position
         document.addEventListener("mousemove", e => {
-          gsap.to(cursorBig, 0.01, { x: e.clientX-35, y: e.clientY-35, delay: 0.05});
-          gsap.to(cursorSmall, 0.01, { x: e.clientX-2.5, y: e.clientY-2.5 });
-          gsap.to(cursorIcon, 0.01, { x: e.clientX-15, y: e.clientY-15 });
+          gsap.to(cursorBig, { x: e.clientX-35, y: e.clientY-35, delay: 0.05});
+          gsap.to(cursorSmall, { x: e.clientX-2.5, y: e.clientY-2.5, delay: 0.025});
+          gsap.to(cursorIcon, { x: e.clientX-15, y: e.clientY-15 });
         });
       },
       growCursor(){
