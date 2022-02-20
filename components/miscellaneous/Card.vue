@@ -9,14 +9,14 @@
         <figure data-scroll>
             <img
             data-scroll
-            data-scroll-speed="1.5"
+            data-scroll-speed="1"
              :src="work.imgUrl.outer" 
              class="outer-img"
              alt="fplfriend">
 
             <img
             data-scroll
-            data-scroll-speed="1"
+            data-scroll-speed="1.5"
              :src="work.imgUrl.inner" 
              class="inner-img"
              alt="fplfriend">
@@ -24,6 +24,14 @@
         </figure>
         <div data-scroll data-scroll-speed="2" class="item__text">
             <h2 class="heading">{{ work.title }}</h2>
+            <ul>
+                <li
+                v-for="(tech, i) in work.techStack"
+                :key='i'
+                class="caption"
+                >{{ tech }}</li>
+            </ul>
+
             <p>{{ work.description }}</p>
         </div>
 
@@ -73,6 +81,19 @@ export default {
             right: 0;
             max-width: 50%;
             z-index: 2;
+
+            ul{
+                display: flex;
+                flex-wrap: 1;
+                flex-direction: row;
+                gap: .4em;
+                margin: .25em 0 0;
+                width: 100%;
+
+                .caption{
+                    padding: 0em .1em;
+                }
+            }
         }
 
         &.cards__item--even{

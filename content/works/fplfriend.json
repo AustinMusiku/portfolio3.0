@@ -5,7 +5,7 @@
     },
     "title": "fplFriend",
     "description": "A handy guide to fantasy premier league team management",
-    "techStack": [ "Sass", "JavaScript", "Nodejs", "Express", "GraphQL", "D3js" ],
+    "techStack": [ "Scss", "JavaScript", "Nodejs", "Express", "GraphQL", "D3.js" ],
     "link": "https://fplFriend.herokuapp.com/",
     "github": "https://github.com/musikuAustin/fplFriend"
 }  

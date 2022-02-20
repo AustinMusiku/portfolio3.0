@@ -9,8 +9,8 @@
                             <h1 class="heading">Get in touch</h1>
                         </span>
                     </div>
-                    <p class="heroPara ">musikudeveloper \[at] gmail.com</p>
-                    <p class="heroPara ">contact \[at] austinmusiku.co.ke</p>
+                    <!-- <p class="heroPara ">musikudeveloper [at] gmail.com</p> -->
+                    <p class="heroPara">austin [at] austinmusiku.co.ke</p>
                 </div>
             </div>
         </hero>
