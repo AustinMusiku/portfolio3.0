@@ -61,11 +61,9 @@ export default {
   styleResources: {
     scss: [
       '~assets/scss/_variables.scss',
-      '~assets/scss/_utilities.scss',
       '~assets/scss/_base.scss',
       '~assets/scss/_layouts.scss',
       '~assets/scss/_typography.scss',
-      '~assets/scss/_components.scss'
     ]
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build

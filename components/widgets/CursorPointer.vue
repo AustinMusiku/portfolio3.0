@@ -127,4 +127,12 @@ export default {
         height: 100%;
       }
   }
+
+  @media (max-width: 80rem){
+    // -- CURSOR --
+    // hide cursor below 1280px
+    .cursor{
+        display: none;
+    }
+}
 </style>
