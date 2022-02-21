@@ -2,6 +2,15 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  render: {
+    resourceHints: false,
+  },
+
+  router: {
+    // base: '/AustinMusiku.github.io/',
+    prefetchLinks: false,
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Austin Musiku - Software Engineer',
@@ -10,6 +19,7 @@ export default {
     },
     meta: [
       { charset: 'utf-8' },
+      { httpEquiv: 'x-ua-compatible', content: 'ie=edge' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' }
@@ -60,10 +70,6 @@ export default {
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    transpile: ['gsap']
-  },
-
-  server: {
-    host: '0.0.0.0'
+    
   }
 }

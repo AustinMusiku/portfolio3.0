@@ -17,8 +17,6 @@ import CursorPointer from '@/components/widgets/CursorPointer'
 import Navigation from '@/components/sections/TheNavigation'
 import TheFooter from '@/components/sections/TheFooter'
 
-import 'locomotive-scroll/dist/locomotive-scroll.min.css'
-
 export default {
   name: 'Layout',
   components: {
@@ -33,21 +31,19 @@ export default {
     }
   },
   mounted(){
-    setTimeout(() => {
-        this.scroll = new this.locomotiveScroll({
-          el: document.querySelector('[data-scroll-container]'),
-          smooth: true,
-          multiplier: 1,
+    this.scroll = new this.locomotiveScroll({
+      el: document.querySelector('[data-scroll-container]'),
+      smooth: true,
+      multiplier: 1,
 
-          smartphone: {
-            smooth: false,
-          },
-          tablet: {
-            breakpoint: 768,
-            smooth: false
-          }
-      })
-    }, 2000)
+      smartphone: {
+        smooth: false,
+      },
+      tablet: {
+        breakpoint: 768,
+        smooth: false
+      }
+    })
   }
 }
 </script>

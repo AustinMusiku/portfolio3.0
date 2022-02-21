@@ -6,11 +6,13 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "generate:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt generate"
   },
   "dependencies": {
     "@nuxt/content": "^1.15.1",
     "core-js": "^3.15.1",
+    "cross-env": "^7.0.3",
     "gsap": "^3.9.1",
     "locomotive-scroll": "^4.1.4",
     "nuxt": "^2.2.0"
