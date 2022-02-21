@@ -13,12 +13,14 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Austin Musiku - Software Engineer',
+    title: 'Austin Musiku - Web developer',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
+      {
+        hid: 'keywords', name: 'keywords', content: 'Austin Musiku web developer software engineer computer science , AustinMusiku.github website'},
       { httpEquiv: 'x-ua-compatible', content: 'ie=edge' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
