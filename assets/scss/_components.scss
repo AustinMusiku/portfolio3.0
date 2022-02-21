@@ -42,9 +42,9 @@ a:hover .cursor{
 }
 
 
-@media (max-width: 68.9375rem){
+@media (max-width: 80rem){
     // -- CURSOR --
-    // hide cursor on mobiles
+    // hide cursor below 1280px
     .cursor{
         display: none;
     }
