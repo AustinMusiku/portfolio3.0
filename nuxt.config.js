@@ -2,15 +2,6 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
-  render: {
-    resourceHints: false,
-  },
-
-  router: {
-    // base: '/AustinMusiku.github.io/',
-    prefetchLinks: false,
-  },
-
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Austin Musiku - Web developer',
@@ -19,15 +10,14 @@ export default {
     },
     meta: [
       { charset: 'utf-8' },
-      {
-        hid: 'keywords', name: 'keywords', content: 'Austin Musiku web developer software engineer computer science , AustinMusiku.github website'},
+      { hid: 'keywords', name: 'keywords', content: 'Austin Musiku web developer software engineer computer science , AustinMusiku.github website'},
       { httpEquiv: 'x-ua-compatible', content: 'ie=edge' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/images/logo.png' },
       { rel: 'stylesheet', href: 'https://fonts.cdnfonts.com/css/clash-display' },
     ],
     script: [
