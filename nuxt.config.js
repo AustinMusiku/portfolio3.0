@@ -12,9 +12,11 @@ export default {
       { charset: 'utf-8' },
       { hid: 'keywords', name: 'keywords', content: 'Austin Musiku web developer software engineer computer science , AustinMusiku.github website'},
       { httpEquiv: 'x-ua-compatible', content: 'ie=edge' },
+      { name: 'google-site-verification', content: 'VkUXBVibMrKMGgd8yj1bjBoKK4XMmayQHdJjYftOhso' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' }
+
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/images/logo.png' },
