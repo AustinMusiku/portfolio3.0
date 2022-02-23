@@ -10,7 +10,7 @@
                         </span>
                     </div>
                     <!-- <p class="heroPara ">musikudeveloper [at] gmail.com</p> -->
-                    <p class="heroPara">austin [at] austinmusiku.co.ke</p>
+                    <p class="heroPara">hello [at] austinmusiku.co.ke</p>
                 </div>
             </div>
         </hero>
