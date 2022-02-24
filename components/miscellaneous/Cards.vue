@@ -22,7 +22,9 @@ export default {
         }
     },
     async fetch(){
-        this.works = await this.$content('works').fetch();
+        this.works = await this.$content('works')
+            .where({'live': true})
+            .fetch();
     }
 }
 </script>
