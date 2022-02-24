@@ -1,4 +1,5 @@
 {
+    "live": true,
     "imgUrl": {
         "inner": "/images/tab-iphone.png",
         "outer": "/images/bg3.png"
