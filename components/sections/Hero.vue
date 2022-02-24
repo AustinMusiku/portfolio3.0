@@ -30,7 +30,7 @@ export default {
         }
 
         .hero__content{
-            margin: 0 0 2em;
+            margin: 0 0 4em;
             padding: 0;
         }
     }
