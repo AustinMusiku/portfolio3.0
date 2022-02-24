@@ -13,7 +13,7 @@
                             <h1 class="heading">Developer<span class="blip">_</span></h1>
                         </span>
                     </div>
-                    <p class="heroPara">Hey stranger, I design and build <strong>cool stuff on the internet</strong>. I am passionate about web applications and all things tech.</p>
+                    <p class="heroPara">Hey stranger, I design and build cool stuff on the internet. I am passionate about web applications and all things tech.</p>
                     <p class="heroPara">I enjoy fiddling with robots (ofcourse also a gruelling round of battle bots), lifting weights and I'm also an amateur DJ</p>
                 </div>
             </div>
@@ -31,6 +31,9 @@ import Cta from '~/components/sections/HomeCtaSection';
 
 export default {
     name: 'HomePage',
+    head: {
+        title: 'Austin Musiku | Developer',
+    },
     components: {
         Hero,
         Works,

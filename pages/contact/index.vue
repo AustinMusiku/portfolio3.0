@@ -22,6 +22,16 @@ import Hero from '~/components/sections/Hero';
 
 export default {
     name: 'HomePage',
+    head: {
+    title: 'Austin Musiku | Get in touch',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Contact | Get in touch'
+      }
+    ],
+    },
     components: {
         Hero,
     },

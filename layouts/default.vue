@@ -31,19 +31,21 @@ export default {
     }
   },
   mounted(){
-    this.scroll = new this.locomotiveScroll({
-      el: document.querySelector('[data-scroll-container]'),
-      smooth: true,
-      multiplier: 1,
-
-      smartphone: {
-        smooth: false,
-      },
-      tablet: {
-        breakpoint: 768,
-        smooth: false
-      }
-    })
+    setTimeout(() => {
+      this.scroll = new this.locomotiveScroll({
+        el: document.querySelector('[data-scroll-container]'),
+        smooth: true,
+        multiplier: 1,
+  
+        smartphone: {
+          smooth: false,
+        },
+        tablet: {
+          breakpoint: 768,
+          smooth: false
+        }
+      })
+    }, 1000)
   }
 }
 </script>

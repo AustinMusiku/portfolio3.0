@@ -4,7 +4,6 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Austin Musiku - Web developer',
     htmlAttrs: {
       lang: 'en'
     },
