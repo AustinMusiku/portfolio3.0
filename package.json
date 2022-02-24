@@ -6,8 +6,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
-    "generate:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt generate"
+    "generate": "nuxt generate"
   },
   "dependencies": {
     "@nuxt/content": "^1.15.1",
