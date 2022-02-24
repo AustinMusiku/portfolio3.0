@@ -42,19 +42,16 @@ export default {
   }
 
   @media (max-width: 48rem){
-    footer{
+    footer.grid{
     
       .grid__container{
-        padding: 2em 0;
+        padding: 1.5em;
         flex-direction: column;
         align-items: flex-start;
         
         .social{
-          // margin: auto;
           padding: 0 0 .5em;
-          // flex-direction: column;
           gap: .75em;
-          // flex-direction: column;
         }
       }
   }
