@@ -25,12 +25,12 @@ export default {
         // background: $clr-grey;
 
         &.hero--fullscreen{
-            height: 95vh;
+            height: 100vh;
             // background: url('/images/noise.png') no-repeat center center;
         }
 
         .hero__content{
-            margin: 0 0 1em;
+            margin: 0 0 2em;
             padding: 0;
         }
     }
@@ -39,7 +39,7 @@ export default {
             padding: 0 1.5em;
 
             .hero__content{
-                margin: 0 0 2em;
+                margin: 0 0 5em;
             }
         }
     }
