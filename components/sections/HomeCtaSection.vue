@@ -3,7 +3,7 @@
         <div class="grid__container">
             <div class="cta-text" id="contact">
                 <a href="/contact" class="super-heading underline hover-link">Hit me up!</a>
-                <p class="sub-heading">I'm not Kanye West, "You can tell me something"😉</p>
+                <p class="sub-heading">I'm not Kanye West, ‘‘You can tell me something’’😉</p>
             </div>
         </div>
     </section>
