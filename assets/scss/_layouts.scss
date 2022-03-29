@@ -13,9 +13,26 @@
     grid-template-columns: 1fr 1.5fr;
 }
 
+.block{
+    margin: 0 auto;
+    max-width: 48rem;
+}
+
 // -- SECTION --
 section{
     padding: 5em 0;
+
+    &.fullscreen{
+        .grid__container{
+            display: grid;
+            place-items: center;
+        }
+    }
+}
+
+.fullscreen,
+section.fullscreen{
+    height: 100vh;
 }
 
 // -- HEADER --
