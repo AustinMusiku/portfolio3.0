@@ -1,5 +1,6 @@
 <template>
   <div data-scroll-container class="wrapper">
+    <background />
     <curtain>
       <h1 slot="curtain-content" class="heading">AM</h1>
     </curtain>
@@ -16,6 +17,7 @@ import Curtain from '@/components/sections/Curtain'
 import CursorPointer from '@/components/widgets/CursorPointer'
 import Navigation from '@/components/sections/TheNavigation'
 import TheFooter from '@/components/sections/TheFooter'
+import Background from '~/components/sections/Background.vue'
 
 export default {
   name: 'Layout',
@@ -23,7 +25,8 @@ export default {
     Curtain,
     CursorPointer,
     Navigation,
-    TheFooter
+    TheFooter,
+    Background
   },
   data() {
     return {
