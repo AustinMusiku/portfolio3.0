@@ -30,17 +30,17 @@ export default {
     .person{
         position: relative;
         width: fit-content;
-        text-decoration: line-through;
 
         &::before{
-            content: "Myself";
+            content: "Austin M.";
             position: absolute;
             width: fit-content;
             height: 100%;
             top: -1em;
-            left: 2%;
-            text-transform: uppercase;
-            transform: rotate(-7.5deg);
+            left: 10%;
+            // text-transform: uppercase;
+            font-family: cursive;
+            transform: rotate(-5deg);
             transform-origin: center center;
             z-index: 1;
         }
@@ -49,12 +49,19 @@ export default {
             content: "";
             position: absolute;
             width: 100%;
-            height: 2px;
+            height: 5px;
             top: 50%;
             left: 0;
             transform: translateY(-50%);
             background-color: #90d78b;
+            opacity: .5;
             z-index: 1;
+        }
+    }
+
+    @media screen and (max-width:48rem) {
+        .quote{
+            text-indent: 0em;
         }
     }
 </style>
