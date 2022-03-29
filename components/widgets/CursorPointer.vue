@@ -128,9 +128,9 @@ export default {
       }
   }
 
-  @media (max-width: 80rem){
+  @media (max-width: 62rem){
     // -- CURSOR --
-    // hide cursor below 1280px
+    // hide cursor below 992px
     .cursor{
         display: none;
     }
