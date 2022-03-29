@@ -4,7 +4,7 @@
             <div class="block">
                 <p class="sub-heading quote">‘‘I cherish good websites with all my heart, I dont care how many libraries, frameworks and technologies I need to learn to make them’’</p>
 
-                <p class="--margin-top-2 --margin-left-1 person">~Peacemaker</p>
+                <p class="--margin-top-3 --margin-left-1 person">~Peacemaker</p>
             </div> 
         </div>
     </section>

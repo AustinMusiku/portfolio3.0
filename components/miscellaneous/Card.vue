@@ -9,7 +9,7 @@
         <figure data-scroll>
             <img
             data-scroll
-            data-scroll-speed="1"
+            data-scroll-speed="0"
              :src="work.imgUrl.outer" 
              class="outer-img"
              alt="fplfriend">
@@ -22,7 +22,7 @@
              alt="fplfriend">
              
         </figure>
-        <div data-scroll data-scroll-speed="2" class="item__text">
+        <div data-scroll data-scroll-speed="3" class="item__text">
             <h2 class="heading">{{ work.title }}</h2>
             <ul>
                 <li
