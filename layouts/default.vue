@@ -56,5 +56,12 @@ export default {
 <style lang="scss">
   .wrapper{
     height: 100%;
+
+    &.--tempDark{
+      transition: .25s;
+        *{
+          color: $clr-light !important;
+        }
+    }
   }
 </style>

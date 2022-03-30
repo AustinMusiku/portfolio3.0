@@ -61,5 +61,10 @@ export default {
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    transpile: ["gsap"],
+  },
+
+  server: {
+    host: '0.0.0.0'
   }
 }
