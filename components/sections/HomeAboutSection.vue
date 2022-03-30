@@ -24,21 +24,21 @@ export default {
         }
     },
     mounted(){
-        gsap.to('.wrapper', {
-            scrollTrigger: {
-                trigger: '.block',
-                start: 'top 60%',
-                end: 'bottom 40%',
-                toggleActions: 'play reverse restart reverse',
-                toggleClass: {
-                    targets: '.wrapper',
-                    className: '--tempDark'
-                },
-            },
-            // lazy: false,
-            backgroundColor: '#0d0d0d',
-            duration: .25
-        })
+        // gsap.to('.wrapper', {
+        //     scrollTrigger: {
+        //         trigger: '.block',
+        //         start: 'top 60%',
+        //         end: 'bottom 40%',
+        //         toggleActions: 'play reverse restart reverse',
+        //         toggleClass: {
+        //             targets: '.wrapper',
+        //             className: '--tempDark'
+        //         },
+        //     },
+        //     // lazy: false,
+        //     backgroundColor: '#0d0d0d',
+        //     duration: .25
+        // })
     }
 }
 </script>
