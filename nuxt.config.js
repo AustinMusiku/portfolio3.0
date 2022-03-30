@@ -63,8 +63,4 @@ export default {
   build: {
     transpile: ["gsap"],
   },
-
-  server: {
-    host: '0.0.0.0'
-  }
 }

@@ -77,7 +77,7 @@ export default {
             top: 50%;
             left: 0;
             transform: translateY(-50%);
-            background-color: #90d78b;
+            background-color: #0d0d0d;
             opacity: .5;
             z-index: 1;
         }
