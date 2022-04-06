@@ -56,7 +56,22 @@ header{
 
 // -- FOOTER --
 
-@media(max-width: 77.5rem){
+@media(min-width: 87.5rem){ // 1400px
+    // -- GRID SYSTEM --
+    .grid{
+        grid-template-columns: 1fr repeat(2, minmax(auto, 48em)) 1fr;
+    }
+}
+
+@media(min-width: 112.5rem){ // 1800px
+    // -- GRID SYSTEM --
+    .grid{
+        grid-template-columns: 4rem 1fr 1fr 4rem;
+    }
+}
+
+
+@media(max-width: 90rem){
     // -- GRID SYSTEM --
     .grid{
         .grid__container{
