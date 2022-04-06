@@ -37,7 +37,7 @@ export default {
     components: {
         Hero,
         Works,
-        Cta,
+        Cta
     },
     data(){
         return{
