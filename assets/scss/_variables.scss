@@ -8,6 +8,17 @@
     --fs-s: .85rem;
 }
 
+@media(min-width: 100rem){
+    :root{
+        --fs-xxxl: 15vw;
+        --fs-xxl: 5.25rem;
+        --fs-xl: 4.5rem;
+        --fs-l: 2.5rem;
+        --fs-x: 1.375rem;
+        --fs-s: .75rem;
+    }
+}
+
 @media(max-width: 48rem){
     :root{
         --fs-xxxl: 15vw;
