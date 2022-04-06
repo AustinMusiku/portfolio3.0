@@ -31,7 +31,6 @@ export default {
 
         .hero__content{
             margin: 0 0 4em;
-            padding: 0;
         }
     }
     @media(max-width: 48rem){
@@ -40,6 +39,7 @@ export default {
 
             .hero__content{
                 margin: 0 0 5em;
+                padding: 0;
             }
         }
     }
