@@ -19,7 +19,6 @@
             </div>
         </hero>
     
-        <about data-scroll-section/>
         <works data-scroll-section> </works>
         <cta data-scroll-section> </cta>
     </div>
@@ -29,7 +28,6 @@
 import Hero from '~/components/sections/Hero';
 import Works from '~/components/sections/HomeWorksSection';
 import Cta from '~/components/sections/HomeCtaSection';
-import About from '~/components/sections/HomeAboutSection';
 
 export default {
     name: 'HomePage',
@@ -39,8 +37,7 @@ export default {
     components: {
         Hero,
         Works,
-        Cta,
-        About
+        Cta
     },
     data(){
         return{
