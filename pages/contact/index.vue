@@ -6,7 +6,7 @@
                     <div class="hero-heading">
                         <span class="concealer">
                             <div class="spanCurtain"></div>
-                            <h1 class="heading">Get in touch</h1>
+                            <h1 class="headingz">Get in touch</h1>
                         </span>
                     </div>
                     <!-- <p class="heroPara ">musikudeveloper [at] gmail.com</p> -->

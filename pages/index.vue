@@ -32,7 +32,7 @@ import Cta from '~/components/sections/HomeCtaSection';
 export default {
     name: 'HomePage',
     head: {
-        title: 'Austin Musiku | Developer',
+        title: 'Austin Musiku | Software Developer',
     },
     components: {
         Hero,
