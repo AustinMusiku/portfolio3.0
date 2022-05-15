@@ -6,7 +6,7 @@
                     <div class="hero-heading">
                         <span class="concealer">
                             <div class="spanCurtain"></div>
-                            <h1 class="heading">Web</h1>
+                            <h1 class="heading">Software</h1>
                         </span>
                         <span class="concealer">
                             <div class="spanCurtain"></div>
