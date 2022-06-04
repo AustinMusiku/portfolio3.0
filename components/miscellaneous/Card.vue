@@ -65,11 +65,10 @@ export default {
                 
                 &.inner-img{
                     position: absolute;
-                    width: 70%;
-                    height: 75%;
-                    left: 15%;
-                    top: 12.5%;
-                    // transform: translate(-50%, -50%);
+                    width: 60%;
+                    height: auto;
+                    left: 20%;
+                    top: 13.5%;
                     z-index: 1;
                 }
             }

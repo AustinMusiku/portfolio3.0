@@ -1,0 +1,12 @@
+{
+    "live": true,
+    "imgUrl": {
+        "inner": "/images/triple22.png",
+        "outer": "/images/bg4.png"
+    },
+    "title": "xoisland",
+    "description": "An online multiplayer tictactoe game",
+    "techStack": [ "nuxt", "typescript", "nodejs", "scss", "firebase" ],
+    "link": "https://xoisland.herokuapp.com/",
+    "github": "https://github.com/musikuAustin/xoisland"
+}
