@@ -87,10 +87,6 @@ export default {
             z-index: 2;
 
             .item-text__header{
-                display: flex;
-                width: 100%;
-                justify-content: space-between;
-
                 svg{
                     display: none;
                 }
@@ -136,11 +132,12 @@ export default {
                     display: flex;
                     width: 100%;
                     justify-content: space-between;
+                    align-items: center;
         
                     svg{
                         display: block;
-                        width: 20px;
-                        height: 20px;
+                        width: 25px;
+                        height: 25px;
                     }
                 }
 
