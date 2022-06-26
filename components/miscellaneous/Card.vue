@@ -25,15 +25,7 @@
         <div data-scroll data-scroll-speed="3" class="item__text">
             <div class="item-text__header">
                 <h2 class="heading">{{ work.title }}</h2>
-                <svg viewBox="0 0 128 128">
-                    <g>
-                        <g>
-                            <line style="stroke-linecap:square;stroke-miterlimit:10;" x1="42.288" x2="105.999" y1="22" y2="22.001"/>
-                            <line style="stroke-linecap:square;stroke-miterlimit:10;" x1="105.999" x2="106.001" y1="22.001" y2="85.713"/>
-                        </g>
-                        <line style="stroke-miterlimit:10;" x1="105.999" x2="15.999" y1="22.001" y2="112"/>
-                    </g>
-                </svg>
+                <SvgIcon iconName="upright-icon" dark="true"></SvgIcon>
             </div>
             <ul>
                 <li
@@ -50,14 +42,16 @@
 </template>
 
 <script>
+import SvgIcon from './SvgIcon.vue';
 export default {
-    name: 'Cards',
+    name: "Cards",
     props: {
         work: {
             type: Object,
             required: true
         }
-    }
+    },
+    components: { SvgIcon }
 }
 </script>
 
@@ -147,12 +141,6 @@ export default {
                         display: block;
                         width: 30px;
                         height: 30px;
-
-                        *{
-                            stroke: $clr-dark;
-                            fill: none;
-                            stroke-width: 4;
-                        }
                     }
                 }
 
