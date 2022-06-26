@@ -128,6 +128,9 @@ export default {
                 transform: translateY(0%);
                 max-width: 100%;
 
+                ul{
+                    margin: 0 0 .25em;
+                }
                 .item-text__header{
                     display: flex;
                     width: 100%;
