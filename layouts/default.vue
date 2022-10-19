@@ -1,9 +1,7 @@
 <template>
   <div data-scroll-container class="wrapper">
     <background />
-    <curtain>
-      <h1 slot="curtain-content" class="heading">AM</h1>
-    </curtain>
+    <curtain />
     <cursor-pointer/>
 
     <navigation/>
