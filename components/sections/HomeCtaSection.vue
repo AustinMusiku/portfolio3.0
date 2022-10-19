@@ -3,7 +3,7 @@
         <div class="grid__container">
             <div class="cta-text" id="contact">
                 <a href="/contact" class="super-heading underline hover-link">Hit me up!</a>
-                <p class="sub-heading">I'm not Kanye West, ‘‘You can tell me something’’😉</p>
+                <p class="sub-heading">I'm not Kanye West, you can tell me something😉</p>
             </div>
         </div>
     </section>
@@ -19,9 +19,10 @@ export default {
 <style lang="scss" scoped>
     .cta-text{
         padding: 3em 0;
+        text-align: center;
 
         .sub-heading{
-            margin: .25em 0 0;
+            margin: .5em 0 0;
         }
     }
 </style>
