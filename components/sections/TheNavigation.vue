@@ -2,7 +2,7 @@
   <nav class="grid">
       <div class="navigation grid__container">
           <div class="logo">
-              <a href="/"><h1 class="sub-heading">AM</h1></a>
+              <nuxt-link to="/"><h1 class="sub-heading">AM</h1></nuxt-link>
           </div>
           <ul class="navigation__links">
                 <li>

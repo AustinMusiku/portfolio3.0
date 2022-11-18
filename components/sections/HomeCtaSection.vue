@@ -2,7 +2,7 @@
     <section class="grid">
         <div class="grid__container">
             <div class="cta-text" id="contact">
-                <a href="#" class="super-heading underline hover-link">Hit me up!</a>
+                <nuxt-link to="/" class="super-heading underline hover-link">Hit me up!</nuxt-link>
                 <p class="sub-heading">I'm not Kanye West, you can tell me something😉</p>
             </div>
         </div>
