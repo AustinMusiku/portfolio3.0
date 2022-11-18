@@ -6,7 +6,7 @@
           </div>
           <ul class="navigation__links">
                 <li>
-                    <a href="/contact" class="navigation__link contact-link underline">Contact</a>
+                    <a class="navigation__link contact-link underline" @click="$nuxt.$emit('scrollToContact')">Contact</a>
                 </li>
           </ul>
       </div>

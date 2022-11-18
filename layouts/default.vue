@@ -31,6 +31,11 @@ export default {
       scroll: {}
     }
   },
+  created () {
+    this.$nuxt.$on('scrollToContact', () => {
+      this.scroll.scrollTo('#contact')
+    })
+  },
   mounted(){
     setTimeout(() => {
       this.scroll = new this.locomotiveScroll({
