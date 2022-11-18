@@ -65,17 +65,11 @@
                             ease: 'power4.in',
                         })
                         
-                        .to('.name', {
-                            fontSize: '8vw',
-                            duration: .75,
-                            ease: 'power1.out',
-                        })
-                        
                         .to(['.curtain__outer', '.curtain__inner'], {
                             backgroundColor: '#0d0d0d',
                             duration: 1,
                             ease: 'power3.inOut',
-                        })
+                        }, "-=1")
                         .to('.name', {
                             color: '#fff',
                             duration: 1,
@@ -155,7 +149,7 @@
 
                 .name{
                     text-transform: capitalize;
-                    font-size: 1vw;
+                    font-size: 2vw;
                     font-weight: $fw-bold;
                     opacity: 0;
                 }
@@ -191,9 +185,10 @@
             }
 
             .curtain__content{
+                padding: 1em;
                 .names{
                     .name{
-                        font-size: 3vw;
+                        font-size: 4vw;
                     }
                 }
             }
