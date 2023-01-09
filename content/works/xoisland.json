@@ -7,6 +7,6 @@
     "title": "xoisland",
     "description": "An online multiplayer tictactoe game",
     "techStack": [ "nuxt", "typescript", "nodejs", "scss", "firebase" ],
-    "link": "https://xoisland.herokuapp.com/",
+    "link": "https://xoisland.up.railway.app/",
     "github": "https://github.com/musikuAustin/xoisland"
 }
