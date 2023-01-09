@@ -59,6 +59,7 @@ export default {
 <style lang="scss">
   .wrapper{
     height: 100%;
+    perspective: 1px;
 
     &.--tempDark{
       transition: .25s;
