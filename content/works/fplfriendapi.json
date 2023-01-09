@@ -1,9 +1,5 @@
 {
     "live": false,
-    "imgUrl": {
-        "inner": "/images/tab-iphone.png",
-        "outer": "/images/bg3.png"
-    },
     "title": "fplFriend-api",
     "description": "GraphQL layer on top of the official fantasy premier league api",
     "techStack": ["TypeScript", "Nodejs", "Express", "GraphQL"],

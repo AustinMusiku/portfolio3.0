@@ -1,9 +1,5 @@
 {
     "live": true,
-    "imgUrl": {
-        "inner": "/images/laptop.png",
-        "outer": "/images/bg6.jpg"
-    },
     "title": "sign language tutor",
     "description": "Learn how to perform sign language gestures for each of the letters of the alphabet",
     "techStack": [ "JavaScript", "nuxt", "tensorflow", "machine learning"],
