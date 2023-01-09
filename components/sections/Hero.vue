@@ -1,6 +1,6 @@
 <template>
     <div class="hero grid" :class="{ 'hero--fullscreen' : fullScreen }">
-        <div data-scroll class="grid__container hero__content">
+        <div class="grid__container hero__content">
             <slot name="hero-content"></slot>
         </div>
     </div>

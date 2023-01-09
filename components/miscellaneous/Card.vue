@@ -1,11 +1,10 @@
 <template>
     <a
-    data-scroll data-scroll-speed="2"
     target="_blank"
     rel="noopener"
     :href="work.link"
     class="cards__item hover-link">
-        <div data-scroll data-scroll-speed="3" class="item__text">
+        <div class="item__text">
             <div class="item-text__header">
                 <h2 class="heading">{{ work.title }}</h2>
                 <SvgIcon iconName="upright-icon" dark="true"></SvgIcon>
