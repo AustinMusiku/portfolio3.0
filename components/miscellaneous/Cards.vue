@@ -33,13 +33,13 @@ export default {
     .cards{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 6em;
+        gap: 2em;
     }
 
     @media(max-width: 48em){
         .cards{
             grid-template-columns: repeat(1, 1fr);
-            gap: 5em;
+            gap: 1em;
 
             .cards__item{
                 &.cards__item--even{
