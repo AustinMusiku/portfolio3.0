@@ -23,6 +23,7 @@ export default {
         height: 100%;
         overflow: hidden;
         z-index: 200;
+        pointer-events: none;
         
         .bg-wrapper{
             position: relative;
@@ -30,6 +31,7 @@ export default {
             height: 1000vh;
             overflow: hidden;
             z-index: 205;
+            pointer-events: none;
             
             .bg{
                 position: absolute;
