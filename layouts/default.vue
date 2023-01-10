@@ -1,4 +1,4 @@
-<template>
+7<template>
   <div data-scroll-container class="wrapper">
     <background />
     <curtain />
@@ -60,6 +60,8 @@ export default {
   .wrapper{
     height: 100%;
     perspective: 1px;
+    max-width: 100vw;
+    overflow-x: hidden;
 
     &.--tempDark{
       transition: .25s;
