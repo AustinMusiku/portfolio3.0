@@ -41,7 +41,7 @@ export default {
     .cards__item{
         padding: 2em 0;
         position: relative;
-        border-top: 1px solid $clr-grey;
+        border-bottom: 1px solid $clr-grey;
 
         .item__text{
             position: relative;
@@ -69,15 +69,6 @@ export default {
                 .caption{
                     padding: 0em .1em;
                 }
-            }
-        }
-
-        &.cards__item--even{
-            figure{
-                margin-left: auto;
-            }
-            .item__text{
-                left: 0;
             }
         }
     }
