@@ -33,7 +33,18 @@ export default {
             required: true
         }
     },
-    components: { SvgIcon }
+    components: { SvgIcon },
+    mounted() {
+        // fade out svg icon on hover through a css class
+        const item = this.$el;
+        const svg = item.querySelector('svg');
+        item.addEventListener('mouseenter', () => {
+            svg.classList.add('hovered');
+        });
+        item.addEventListener('mouseleave', () => {
+            svg.classList.remove('hovered');
+        });
+    },
 }
 </script>
 
@@ -55,6 +66,12 @@ export default {
                 svg{
                     width: 50px;
                     height: 50px;
+                    transition: .25s;
+                    opacity: 0;
+
+                    &.hovered{
+                        opacity: 1;
+                    }   
                 }
             }
 
@@ -106,6 +123,18 @@ export default {
                 }
             }
 
+        }
+    }
+
+    @media(max-width: 48rem){
+        .cards__item{
+            .item__text{
+                .item-text__header{
+                    svg{
+                        opacity: 1;
+                    }
+                }
+            }
         }
     }
 </style>
