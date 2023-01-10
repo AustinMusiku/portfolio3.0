@@ -1,7 +1,7 @@
 <template>
     <section class="grid">
         <div class="grid__container">
-            <h1 class="section__heading">works</h1>
+            <h1 class="section__heading sub-heading">Projects</h1>
             <cards></cards> 
         </div>
     </section>
