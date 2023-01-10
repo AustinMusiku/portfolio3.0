@@ -11,12 +11,12 @@ export default {
 <style lang="scss" scoped>
     .bg{
         position: fixed;
-        top: -50%;
-        left: -50%;
-        right: -50%;
-        bottom: -50%;
-        width: 200%;
-        height: 200vh;
+        top: -100%;
+        left: -100%;
+        right: -100%;
+        bottom: -100%;
+        width: 500%;
+        height: 500vh;
         background: transparent url('static/images/noise-transparent.png') repeat 0 0;
         background-repeat: repeat;
         animation: bg-animation .2s infinite;
