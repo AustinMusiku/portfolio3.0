@@ -79,7 +79,7 @@ export default {
                 display: flex;
                 flex-wrap: 1;
                 flex-direction: row;
-                gap: .4em;
+                gap: .75em;
                 margin: .25em 0 0;
                 width: 100%;
 
@@ -104,6 +104,7 @@ export default {
 
                 ul{
                     margin: 0 0 .25em;
+                    gap: .4em;
                 }
                 .item-text__header{
                     display: flex;
@@ -129,6 +130,11 @@ export default {
     @media(max-width: 48rem){
         .cards__item{
             .item__text{
+
+                ul {
+                    margin: .35em 0 0;
+                }
+
                 .item-text__header{
                     svg{
                         opacity: 1;
