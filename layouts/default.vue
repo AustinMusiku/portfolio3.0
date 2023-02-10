@@ -1,4 +1,4 @@
-<template>
+7<template>
   <div data-scroll-container class="wrapper">
     <background />
     <curtain />
