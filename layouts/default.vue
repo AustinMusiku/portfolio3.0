@@ -60,7 +60,7 @@ export default {
   .wrapper{
     height: 100%;
     perspective: 1px;
-    max-width: 100vw;
+    overflow: hidden;
 
     &.--tempDark{
       transition: .25s;

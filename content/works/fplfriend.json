@@ -1,9 +1,5 @@
 {
     "live": true,
-    "imgUrl": {
-        "inner": "/images/tab-iphone.png",
-        "outer": "/images/bg3.png"
-    },
     "title": "fplFriend",
     "description": "A handy guide to fantasy premier league team management",
     "techStack": [ "Scss", "JavaScript", "Nodejs", "Express", "GraphQL", "D3.js" ],

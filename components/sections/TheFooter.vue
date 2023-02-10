@@ -7,14 +7,19 @@
         <!-- <li><a target="_blank" rel="noopener" href="https://codepen.io/austinmusiku" class="underline social__link">Codepen</a></li> -->
         <li><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/austin-musiku-0b37b819b/" class="underline social__link">LinkedIn</a></li>
       </ul>
-      <p class="copyright">Austin Musiku 2022</p>
+      <p class="copyright">Austin Musiku {{ date }}</p>
     </div>
   </footer>
 </template>
 
 <script>
 export default {
-
+  name: "TheFooter",
+  data() {
+    return {
+      date: new Date().getFullYear()
+    };
+  },
 }
 </script>
 

@@ -1,9 +1,5 @@
 {
     "live": false,
-    "imgUrl": {
-        "inner": "",
-        "outer": "/images/bg2.png"
-    },
     "title": "Pied Piper",
     "description": "Compress your image and video files for easeier sharing.",
     "techStack": [ "Nuxt", "Scss", "Nodejs" ],
