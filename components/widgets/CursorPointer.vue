@@ -47,7 +47,7 @@ export default {
             });
         },
         growCursor() {
-            let plainLinks = Array.from(document.querySelectorAll("a"));
+            let plainLinks = Array.from(document.querySelectorAll("a, button"));
             plainLinks.forEach(link => {
                 link.addEventListener("mouseenter", e => {
                     gsap.to(".cursor", { opacity: 0, duration: 0.1, ease: "power2.in" });
