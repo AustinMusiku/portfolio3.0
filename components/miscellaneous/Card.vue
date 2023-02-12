@@ -54,6 +54,10 @@ export default {
         position: relative;
         border-bottom: 1px solid $clr-grey;
 
+        &:nth-of-type(1){
+            padding-top: 1em;
+        }
+
         .item__text{
             position: relative;
 
@@ -92,6 +96,11 @@ export default {
 
     @media(max-width: 62rem){
         .cards__item{
+
+            &:nth-of-type(1){
+                padding-top: .5em;
+            }
+
             figure{
                 width: 100%;
             }
