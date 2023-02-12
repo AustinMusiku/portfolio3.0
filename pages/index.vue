@@ -3,7 +3,7 @@
         <hero data-scroll-section>
         <div slot="hero-content" class="hero-container">
                 <div class="hero-text">
-                    <p class="sub-heading">Hey stranger, I design and build cool stuff on the internet. I am passionate about web applications and all things tech. I enjoy fiddling with robots (ofcourse also a gruelling round of battle bots), lifting weights and I'm also an amateur DJ</p>
+                    <p class="sub-heading">Hey stranger, I design and build cool stuff on the internet. I am passionate about web applications and all things tech. When I'm not busy pretending to be an awwwards judge, you can find me lifting weights or nerding out over random stats</p>
                 </div>
             </div>
         </hero>
