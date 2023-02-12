@@ -37,7 +37,7 @@
             padding: 0 1.5em;
 
             .hero__content{
-                margin: 0 0 1.5em;
+                margin: 0 0 5em;
                 padding: 0;
             }
         }
