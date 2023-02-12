@@ -79,4 +79,9 @@ a{
 button{
     all: unset;
     cursor: pointer;
+
+    &:focus{
+        outline: 2px solid $clr-dark;
+        border-radius: 2px;
+    }
 }
