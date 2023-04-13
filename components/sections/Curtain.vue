@@ -1,31 +1,31 @@
 <template>
     <div class="curtains" ref="curtains">
         <div class="curtain curtain__inner" ref="curtain__inner">
-            <svg 
-                class="loader"
-                width="1728" height="297" viewBox="0 0 1728 297"
-                fill="#8fd589"
-                preserveAspectRatio="none">
-                <path 
-                    d="M1728 1H0V295C0 295 199 140.164 844.5 142.045C1490 143.925 1728 295 1728 295V1Z"/>
-            </svg>
+            
         </div>
 
         <div class="curtain curtain__outer" ref="curtain__outer">
             <div class="curtain__content">
                 <div class="names">
-                    <span class="name second_name">Austin Musiku</span>
+                    <div class="name first_name">
+                        <span class="letter">A</span>
+                        <span class="letter">u</span>
+                        <span class="letter">s</span>
+                        <span class="letter">t</span>
+                        <span class="letter">i</span>
+                        <span class="letter">n</span>
+                    </div>
+
+                    <div class="name second_name">
+                        <span class="letter">M</span>
+                        <span class="letter">u</span>
+                        <span class="letter">s</span>
+                        <span class="letter">i</span>
+                        <span class="letter">k</span>
+                        <span class="letter">u</span>
+                    </div>
                 </div>
             </div>
-
-            <svg 
-                class="loader"
-                width="1728" height="297" viewBox="0 0 1728 297"
-                fill="#0d0d0d"
-                preserveAspectRatio="none">
-                <path 
-                    d="M1728 1H0V295C0 295 199 140.164 844.5 142.045C1490 143.925 1728 295 1728 295V1Z"/>
-            </svg>
 
         </div>
 
@@ -48,39 +48,18 @@
 
                 window.addEventListener('load', () => {
                     tl
-                        .to('.name', {
+                        .to('.letter', {
                             opacity: 1,
-                            duration: .75,
+                            duration: .65,
                             ease: 'power1.inout',
+                            stagger: 0.025
                         })
-                        .to('.names', {
-                            '--scale': '1',
-                            duration: .75,
-                            ease: 'power4.out'
-                        }, "-=.75")
-                        .to('.names', {
-                            '--scale': '0',
-                            '--origin': 'right',
-                            duration: .75,
-                            ease: 'power4.in',
-                        })
-                        
-                        .to(['.curtain__outer', '.curtain__inner'], {
-                            backgroundColor: '#0d0d0d',
-                            duration: 1,
-                            ease: 'power3.inOut',
-                        }, "-=1")
-                        .to('.name', {
-                            color: '#fff',
-                            duration: 1,
-                            ease: 'power3.inOut',
-                        }, "-=1")
 
                         .to(['.curtain__outer', '.curtain__inner'], {
                             duration: 2,
                             y: '-130%',
                             ease: 'power3.inOut',
-                            stagger: 0.035
+                            stagger: 0.125
                         })
                 })
             }
@@ -128,6 +107,7 @@
         }
         &.curtain__inner{
             background: #8fd589;
+            height: 200vh;
             .loader{
                 transform: translateY(70%);
             }
@@ -142,7 +122,7 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
-                gap: .25em;
+                gap: 1em;
                 width: 100%;
                 --scale: 0;
                 --origin: left;
@@ -151,7 +131,10 @@
                     text-transform: capitalize;
                     font-size: 2vw;
                     font-weight: $fw-bold;
-                    opacity: 0;
+                    
+                    .letter{
+                        opacity: 0;
+                    }
                 }
 
                 &::before, 
