@@ -2,7 +2,7 @@
     "live": true,
     "title": "sign language tutor",
     "description": "Learn how to perform sign language gestures for each of the letters of the alphabet",
-    "techStack": [ "JavaScript", "nuxt", "tensorflow", "machine learning"],
+    "techStack": [ "JavaScript", "Nuxt", "Tensorflow", "Machine learning"],
     "link": "https://signlanguagetutor.netlify.app/",
     "github": "https://github.com/AustinMusiku/SLT"
 }  
