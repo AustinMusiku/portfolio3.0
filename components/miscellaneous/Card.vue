@@ -141,7 +141,7 @@ export default {
             .item__text{
 
                 ul {
-                    margin: .35em 0 0;
+                    margin: .35em 0 .15em;
                 }
 
                 .item-text__header{

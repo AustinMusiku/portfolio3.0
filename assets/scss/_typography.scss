@@ -48,13 +48,13 @@
 a,p{
     font-size: var(--fs-x);
     font-weight: 400;
-    line-height: 1.6;
 }
 p{
-    line-height: 1.8;
+    line-height: 1.35;
 }
 a{
     text-decoration: none;
+    line-height: 1.6;
     
     &:hover{
         text-decoration: none;
@@ -83,5 +83,11 @@ button{
     &:focus{
         outline: 2px solid $clr-dark;
         border-radius: 2px;
+    }
+}
+
+@media(min-width: 62rem) {
+    p{
+        line-height: 1.8;
     }
 }
