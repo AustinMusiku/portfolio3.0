@@ -122,17 +122,16 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
-                gap: 1em;
+                gap: 2em;
                 width: 100%;
                 --scale: 0;
                 --origin: left;
 
                 .name{
-                    text-transform: capitalize;
-                    font-size: 2vw;
-                    font-weight: $fw-bold;
-                    
                     .letter{
+                        text-transform: capitalize;
+                        font-size: var(--fs-xl);
+                        font-weight: $fw-bold;
                         opacity: 0;
                     }
                 }
@@ -170,8 +169,12 @@
             .curtain__content{
                 padding: 1em;
                 .names{
+                    gap: 1em;
+
                     .name{
-                        font-size: 4vw;
+                        .letter{
+                            font-size: var(--fs-l);
+                        }
                     }
                 }
             }
