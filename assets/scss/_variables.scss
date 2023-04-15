@@ -1,6 +1,6 @@
 // -- VARIABLES --
 :root{
-    --fs-xxxl: 12vw;
+    --fs-xxxl: 10rem;
     --fs-xxl: 4.2rem;
     --fs-xl: 4.0rem;
     --fs-l: 2rem;
@@ -10,7 +10,7 @@
 
 @media(min-width: 100rem){
     :root{
-        --fs-xxxl: 15vw;
+        --fs-xxxl: 10rem;
         --fs-xxl: 5.25rem;
         --fs-xl: 4.5rem;
         --fs-l: 2.5rem;
@@ -21,7 +21,7 @@
 
 @media(max-width: 48rem){
     :root{
-        --fs-xxxl: 15vw;
+        --fs-xxxl: 3.8625rem;
         --fs-xxl: 4.2rem;
         --fs-xl: 2.8rem;
         --fs-l: 1.6rem;
@@ -31,7 +31,7 @@
 }
 @media(max-width: 20rem){
     :root{
-        --fs-xxxl: 12vw;
+        --fs-xxxl: 2.1rem;
         --fs-xxl: 4.2rem;
         --fs-xl: 2.2rem;
         --fs-l: 1.4rem;
@@ -50,7 +50,7 @@ $ff: 'Clash Display', sans-serif;
 
 $clr-primary: #5aabdd;
 $clr-secondary: rgba(48,100,238,1);
-$clr-dark: #0d0d0d;
+$clr-dark: #1d1d1d;
 $clr-grey: lighten($clr-dark, 75%);
 $clr-light: #fff;
 

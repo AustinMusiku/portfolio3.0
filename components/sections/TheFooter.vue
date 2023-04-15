@@ -45,6 +45,18 @@ export default {
     }
   }
 
+  @media (min-width: 100rem){
+      footer.grid{
+        .grid__container{
+          .social{
+            padding: 0 0 1em;
+            gap: 2em;
+            max-width: 20em;
+          }
+        }
+    }
+  }
+
   @media (max-width: 48rem){
     footer.grid{
     

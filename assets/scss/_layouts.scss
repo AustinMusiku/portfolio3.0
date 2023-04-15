@@ -83,6 +83,13 @@ footer{
     }
 }
 
+@media(min-width: 100rem){ // 1600px
+    // -- GRID SYSTEM --
+    .grid{
+        grid-template-columns: 20% 1fr 1fr 20%;
+    }
+}
+
 @media(max-width: 90rem){ // 1440px
     // -- GRID SYSTEM --
     .grid{
