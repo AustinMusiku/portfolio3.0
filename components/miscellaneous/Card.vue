@@ -96,6 +96,7 @@ export default {
 
     @media(max-width: 62rem){
         .cards__item{
+            padding: 1em 0;
 
             &:nth-of-type(1){
                 padding-top: .5em;
