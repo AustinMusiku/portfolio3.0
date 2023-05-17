@@ -6,7 +6,13 @@
           </div>
           <ul class="navigation__links">
                 <li>
-                    <button type="button" class="navigation__link contact-link underline" @click="$nuxt.$emit('scrollToContact')">Contact</button>
+                    <a 
+                        target="_blank"
+                        rel="noopener"
+                        href="https://amusiku.hashnode.dev/"
+                        class="underline social__link">
+                            Blog
+                    </a>
                 </li>
           </ul>
       </div>
