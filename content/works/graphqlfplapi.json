@@ -1,0 +1,8 @@
+{
+    "live": true,
+    "title": "graphql-fpl-api",
+    "description": "A rich GraphQL proxy layer on top of the official Fantasy Premier League REST API",
+    "techStack": ["TypeScript", "Nodejs", "Express", "GraphQL"],
+    "link": "https://github.com/AustinMusiku/graphql-fpl-api",
+    "github": "https://github.com/AustinMusiku/graphql-fpl-api"
+}
